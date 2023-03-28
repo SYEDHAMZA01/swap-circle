@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./assets/css/navbar.css">
+    <link href="./assets/css/style.css" rel="stylesheet" type="text/css" >
+</head>
+<body>
+    <div class="d-flex" id="dashboard-wrapper">
+
+       <!-- Side-Navbar Start-->
+
+       <div class="bg-white" id="sidebar-wrapper">
+
+        <div class="sidebar-logo text-center p-4">
+            <img src="./assets/images/logo176X72.png" alt="image" class="img-fluid">
+        </div>
+
+        <div class="list-group list-grop-flush ">
+            <a href="./home.html" class="list-group-item list-group-item-action">
+                <img src="./assets/images/icons/home.png" class="img-fluid me-4" alt="icon"> Home
+            </a>
+            <a href="./data-analysis.html" class="list-group-item list-group-item-action active">
+                <img src="./assets/images/icons/analytics.png" class="img-fluid me-4" alt="icon">Data Analysis
+            </a>
+            <a href="./offers.html" class="list-group-item list-group-item-action">
+                <img src="./assets/images/icons/activity.png" class="img-fluid me-4" alt="icon">Offers
+            </a>
+            <a href="./track.html" class="list-group-item list-group-item-action">
+                <img src="./assets/images/icons/send-2.png" class="img-fluid me-4" alt="icon">Track
+            </a>
+            <a href="./connects.html" class="list-group-item list-group-item-action">
+                <img src="./assets/images/icons/Connect.png" class="img-fluid me-4" alt="icon">Connect
+            </a>
+            <a href="./profile.html" class="list-group-item list-group-item-action">
+                <img src="./assets/images/icons/Profile.png" class="img-fluid me-4" alt="icon">Profile
+            </a>
+            <a href="./message.html" class="list-group-item list-group-item-action">
+                <img src="./assets/images/icons/mark_chat_unread.png" class="img-fluid me-4" alt="icon">Message
+            </a>
+        </div>
+
+    </div>
+
+    <!-- Side-Navbar End-->
+    <!-- navbar start -->
+    <div class="top-bar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 py-3">
+            <div class="d-flex align-items-center">
+                <!-- <i class="fas fa-align-left me-3 fs-4 primary-text">@</i> -->
+                <img src="./assets/images/icons/div.png" alt="" class="img-fluid me-3"  id="menu-toggle">
+                <h3 class="fw-bolder m-0">Dashboard</h3>
+            </div>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center flex-row">
+                <li class="nav-item dropdown me-3 me-sm-5">
+                    <a href="#" class="nav-link d-flex align-items-center" role="button" id="navbarDropdown1" data-bs-toggle="dropdown" aria-expanded="false">
+                       <img src="./assets/images/icons/notification.png" class="img-fluid" alt="" srcset="">
+                       <span class="position-absolute top-0 start-100 translate-middle badge rounded-full bg-primary text-white">
+                        12
+                        <span class="visually-hidden">unread Notification</span>
+                      </span>
+                    </a>
+
+                    <ul class="dropdown-menu position-absolute  mt-3 dropdown-menu-end py-0" aria-labelledby="navbarDropdown2">
+                            <h6 class="dropdown-item-text font-15 m-0 py-3 border-bottom d-flex justify-content-between align-items-center">
+                                Notifications <span class="badge bg-soft-primary badge-pill">2</span>
+                            </h6>
+                            <div class="notification-menu">
+                                <!-- item-->
+                                <a href="#" class="dropdown-item py-3">
+                                    <small class="float-end text-muted ps-2">2 min ago</small>
+                                    <div class="media d-flex">
+                                        <div class="media-body align-self-center ms-2 text-truncate">
+                                            <h6 class="my-0 fw-normal text-dark">Your order is placed</h6>
+                                            <small class="text-muted mb-0">Dummy text of the printing and
+                                                industry.</small>
+                                        </div>
+                                        <!--end media-body-->
+                                    </div>
+                                    <!--end media-->
+                                </a>
+                                <!--end-item-->
+                                <!-- item-->
+                                <a href="#" class="dropdown-item py-3">
+                                    <small class="float-end text-muted ps-2">10 min ago</small>
+                                    <div class="media d-flex">
+                                        <div class="media-body align-self-center ms-2 text-truncate">
+                                            <h6 class="my-0 fw-normal text-dark">Meeting with designers</h6>
+                                            <small class="text-muted mb-0">It is a long established fact that a
+                                                reader.</small>
+                                        </div>
+                                        <!--end media-body-->
+                                    </div>
+                                    <!--end media-->
+                                </a>
+                                <!--end-item-->
+                                <!-- item-->
+                                <a href="#" class="dropdown-item py-3">
+                                    <small class="float-end text-muted ps-2">40 min ago</small>
+                                    <div class="media d-flex">
+                                        <div class="media-body align-self-center ms-2 text-truncate">
+                                            <h6 class="my-0 fw-normal text-dark">UX 3 Task complete.</h6>
+                                            <small class="text-muted mb-0">Dummy text of the printing.</small>
+                                        </div>
+                                        <!--end media-body-->
+                                    </div>
+                                    <!--end media-->
+                                </a>
+                                <!--end-item-->
+                                <!-- item-->
+                                <a href="#" class="dropdown-item py-3">
+                                    <small class="float-end text-muted ps-2">1 hr ago</small>
+                                    <div class="media d-flex">
+                                        <div class="media-body align-self-center ms-2 text-truncate">
+                                            <h6 class="my-0 fw-normal text-dark">Your order is placed</h6>
+                                            <small class="text-muted mb-0">It is a long established fact that a
+                                                reader.</small>
+                                        </div>
+                                        <!--end media-body-->
+                                    </div>
+                                    <!--end media-->
+                                </a>
+                                <!--end-item-->
+                                <!-- item-->
+                                <a href="#" class="dropdown-item py-3">
+                                    <small class="float-end text-muted ps-2">2 hrs ago</small>
+                                    <div class="media d-flex">
+                                        <div class="avatar-md bg-soft-primary">
+                                            <i class="ti ti-users"></i>
+                                        </div>
+                                        <div class="media-body align-self-center ms-2 text-truncate">
+                                            <h6 class="my-0 fw-normal text-dark">Payment Successfull</h6>
+                                            <small class="text-muted mb-0">Dummy text of the printing.</small>
+                                        </div>
+                                        <!--end media-body-->
+                                    </div>
+                                    <!--end media-->
+                                </a>
+                                <!--end-item-->
+                            </div>
+                        </ul>
+                </li>
+                <li class="nav-item dropdown me-3 me-sm-5">
+                    <a href="#" class="nav-link d-flex align-items-center" role="button" id="navbarDropdown2" data-bs-toggle="dropdown" aria-expanded="false">
+                       <img src="./assets/images/icons/messages-2.png" class="img-fluid" alt="" srcset="">
+                       <span class="position-absolute top-0 start-100 translate-middle badge rounded-full bg-primary text-white">
+                        5
+                        <span class="visually-hidden">unread messages</span>
+                      </span>
+                    </a>
+
+                   <ul class="dropdown-menu position-absolute  mt-3 dropdown-menu-end py-0" aria-labelledby="navbarDropdown2">
+                            <h6 class="dropdown-item-text font-15 m-0 py-3 border-bottom d-flex justify-content-between align-items-center">
+                                Messenges <span class="badge bg-soft-primary badge-pill">2</span>
+                            </h6>
+                            <div class="notification-menu">
+                                <!-- item-->
+                                <a href="#" class="dropdown-item py-3">
+                                    <small class="float-end text-muted ps-2">2 min ago</small>
+                                    <div class="media d-flex">
+                                        <div class="media-body align-self-center ms-2 text-truncate">
+                                            <h6 class="my-0 fw-normal text-dark">Your order is placed</h6>
+                                            <small class="text-muted mb-0">Dummy text of the printing and
+                                                industry.</small>
+                                        </div>
+                                        <!--end media-body-->
+                                    </div>
+                                    <!--end media-->
+                                </a>
+                                <!--end-item-->
+                                <!-- item-->
+                                <a href="#" class="dropdown-item py-3">
+                                    <small class="float-end text-muted ps-2">10 min ago</small>
+                                    <div class="media d-flex">
+                                        <div class="media-body align-self-center ms-2 text-truncate">
+                                            <h6 class="my-0 fw-normal text-dark">Meeting with designers</h6>
+                                            <small class="text-muted mb-0">It is a long established fact that a
+                                                reader.</small>
+                                        </div>
+                                        <!--end media-body-->
+                                    </div>
+                                    <!--end media-->
+                                </a>
+                                <!--end-item-->
+                                <!-- item-->
+                                <a href="#" class="dropdown-item py-3">
+                                    <small class="float-end text-muted ps-2">40 min ago</small>
+                                    <div class="media d-flex">
+                                        <div class="media-body align-self-center ms-2 text-truncate">
+                                            <h6 class="my-0 fw-normal text-dark">UX 3 Task complete.</h6>
+                                            <small class="text-muted mb-0">Dummy text of the printing.</small>
+                                        </div>
+                                        <!--end media-body-->
+                                    </div>
+                                    <!--end media-->
+                                </a>
+                                <!--end-item-->
+                                <!-- item-->
+                                <a href="#" class="dropdown-item py-3">
+                                    <small class="float-end text-muted ps-2">1 hr ago</small>
+                                    <div class="media d-flex">
+                                        <div class="media-body align-self-center ms-2 text-truncate">
+                                            <h6 class="my-0 fw-normal text-dark">Your order is placed</h6>
+                                            <small class="text-muted mb-0">It is a long established fact that a
+                                                reader.</small>
+                                        </div>
+                                        <!--end media-body-->
+                                    </div>
+                                    <!--end media-->
+                                </a>
+                                <!--end-item-->
+                                <!-- item-->
+                                <a href="#" class="dropdown-item py-3">
+                                    <small class="float-end text-muted ps-2">2 hrs ago</small>
+                                    <div class="media d-flex">
+                                        <div class="avatar-md bg-soft-primary">
+                                            <i class="ti ti-users"></i>
+                                        </div>
+                                        <div class="media-body align-self-center ms-2 text-truncate">
+                                            <h6 class="my-0 fw-normal text-dark">Payment Successfull</h6>
+                                            <small class="text-muted mb-0">Dummy text of the printing.</small>
+                                        </div>
+                                        <!--end media-body-->
+                                    </div>
+                                    <!--end media-->
+                                </a>
+                                <!--end-item-->
+                            </div>
+                        </ul>
+                </li>
+                <li class="nav-item dropdown ">
+                    <a href="#" class="nav-link d-flex align-items-center" role="button" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                       <div class="me-4 d-none d-lg-block">
+                        <h5 class="sub-heading text-black mb-1 fw-bolder">Hi, Jerome Bell</h5>
+                        <span>Hello</span>
+                       </div> <img src="./assets/images/17.jpg.png" class="img-fluid" alt="" srcset="">
+                    </a>
+
+                    <ul class="dropdown-menu position-absolute  dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        
+                        
+                        <li class=""><a href="./login.html" class="dropdown-item d-flex  align-items-center">
+                                <?xml version="1.0" ?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                                   <svg width="28px" height="28px" viewBox="0 0 1000 1000" data-name="Layer 2" id="Layer_2" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:none;stroke:#020202;stroke-linecap:round;stroke-miterlimit:10;stroke-width:22px;}.cls-2{fill:#020202;}</style></defs><path class="cls-1" d="M591.61,280.48C693.9,317.86,766.91,416,766.91,531.26c0,147.41-119.5,266.91-266.91,266.91S233.09,678.67,233.09,531.26c0-115.22,73-213.4,175.3-250.78"/><rect class="cls-2" height="160.61" rx="35.92" width="71.84" x="464.08" y="201.83"/></svg>
+                                <span class=" d-inline-block">Logout</span>
+                            </a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- navbar end -->
+
+        <div class="page-content-wrapper">
+            <!-- content -->
+            <div class="page-content-tab">
+                <div class="container-fluid px-4 pb-4">
+                    <div class="wallet-wrapper">
+                     
+                       <!-- create categories -->
+                        <div class="wallet-tabs">
+                            <div class="d-flex justify-content-between align-items-center mb-5 flex-wrap gap-3">
+                                <ul class="nav nav-pills me-auto" id="pills-tab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-offers" type="button" role="tab" aria-controls="pills-offers" aria-selected="true">All  offers value</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-buying" type="button" role="tab" aria-controls="pills-buying" aria-selected="false">All buying Value</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-transactions" type="button" role="tab" aria-controls="pills-transactions" aria-selected="false">Total transactions</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-average" type="button" role="tab" aria-controls="pills-average" aria-selected="false">Average value</button>
+                                    </li>
+                                </ul>
+                                <div class="d-flex align-items-center ms-auto">
+                                    <a class="btn btn-primary rounded-3 px-4 py-2 me-3">Generate Data</a>
+                                    <div class="nav-item dropdown ">
+                                        <a href="#" class="" role="button" id="navbarDropdown2" data-bs-toggle="dropdown" aria-expanded="false">
+                                           <img src="./assets/images/icons/filter.png" class="img-fluid w-35" alt="" srcset="">
+                                        </a>
+            
+                                        <ul class="dropdown-menu position-absolute  mt-3 dropdown-menu-end" aria-labelledby="navbarDropdown2">
+                                            <li><a href="#" class="dropdown-item fw-bold py-2">Today</a></li>
+                                            <li><a href="#" class="dropdown-item fw-bold py-2">Week</a></li>
+                                            <li><a href="#" class="dropdown-item fw-bold py-2">Month</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-content" id="pills-tabContent">
+                                <!-- All  offers value -->
+                                <div class="tab-pane fade show active" id="pills-offers" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="card border-0 mb-3">
+                                                <div class="card-body p-2 d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="wallet-icon me-3 bg-green">
+                                                            <img src="./assets/images/icons/send-1.png" alt="" srcset="">
+                                                        </div>
+                                                        <div>
+                                                            <p class="mb-0 fw-bolder">From James Anderson</p>
+                                                            <small class="text-primary">Swap - 2:26pm</small>
+                                                        </div>
+                                                    </div>
+                                                    <small class="text-success me-3">$63.98</small>
+                                                </div>
+                                            </div>                                            
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="card border-0 mb-3">
+                                                <div class="card-body p-2 d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="wallet-icon me-3 bg-green">
+                                                            <img src="./assets/images/icons/send-1.png" alt="" srcset="">
+                                                        </div>
+                                                        <div>
+                                                            <p class="mb-0 fw-bolder">From James Anderson</p>
+                                                            <small class="text-primary">Swap - 2:26pm</small>
+                                                        </div>
+                                                    </div>
+                                                    <small class="text-success me-3">$63.98</small>
+                                                </div>
+                                            </div>                                            
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="card border-0 mb-3">
+                                                <div class="card-body p-2 d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="wallet-icon me-3 bg-green">
+                                                            <img src="./assets/images/icons/send-1.png" alt="" srcset="">
+                                                        </div>
+                                                        <div>
+                                                            <p class="mb-0 fw-bolder">From James Anderson</p>
+                                                            <small class="text-primary">Swap - 2:26pm</small>
+                                                        </div>
+                                                    </div>
+                                                    <small class="text-success me-3">$63.98</small>
+                                                </div>
+                                            </div>                                            
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="card border-0 mb-3">
+                                                <div class="card-body p-2 d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="wallet-icon me-3 bg-green">
+                                                            <img src="./assets/images/icons/send-1.png" alt="" srcset="">
+                                                        </div>
+                                                        <div>
+                                                            <p class="mb-0 fw-bolder">From James Anderson</p>
+                                                            <small class="text-primary">Swap - 2:26pm</small>
+                                                        </div>
+                                                    </div>
+                                                    <small class="text-success me-3">$63.98</small>
+                                                </div>
+                                            </div>                                            
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="card border-0 mb-3">
+                                                <div class="card-body p-2 d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="wallet-icon me-3 bg-green">
+                                                            <img src="./assets/images/icons/send.png" alt="" srcset="">
+                                                        </div>
+                                                        <div>
+                                                            <p class="mb-0 fw-bolder">To James Anderson</p>
+                                                            <small class="text-primary">Swap - 2:26pm</small>
+                                                        </div>
+                                                    </div>
+                                                    <small class="text-danger me-3">$63.98</small>
+                                                </div>
+                                            </div>                                            
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="card border-0 mb-3">
+                                                <div class="card-body p-2 d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="wallet-icon me-3 bg-green">
+                                                            <img src="./assets/images/icons/send.png" alt="" srcset="">
+                                                        </div>
+                                                        <div>
+                                                            <p class="mb-0 fw-bolder">To James Anderson</p>
+                                                            <small class="text-primary">Swap - 2:26pm</small>
+                                                        </div>
+                                                    </div>
+                                                    <small class="text-danger me-3">$63.98</small>
+                                                </div>
+                                            </div>                                            
+                                        </div>
+                                        <!-- cards end -->
+                                        <!-- pagination -->
+                                        <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mt-3">
+                                            <p class="text-black mb-0">Showing 1 to 10 of 57 entries</p>
+                                            <div class="pagination ms-auto d-flex justify-content-around flex-wrap" role="group" aria-label="Basic example">
+                                                <a href="#" class="btn btn-outline-primary btn-prev">Previous</a>
+                                                <a href="#" class="btn btn-outline-primary active">1</a>
+                                                <a href="#" class="btn btn-outline-primary">2</a>
+                                                <a href="#" class="btn btn-outline-primary">3</a>
+                                                <a href="#" class="btn btn-outline-primary">4</a>
+                                                <a href="#" class="btn btn-outline-primary">5</a>
+                                                <a href="#" class="btn btn-outline-primary btn-next">Next</a>
+                                              </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 🔥 All buying Value start -->
+                                <div class="tab-pane fade" id="pills-buying" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="card border-0 mb-3">
+                                                <div class="card-body p-2 d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="wallet-icon me-3 bg-green">
+                                                            <img src="./assets/images/icons/send.png" alt="" srcset="">
+                                                        </div>
+                                                        <div>
+                                                            <p class="mb-0 fw-bolder">To James Anderson</p>
+                                                            <small class="text-primary">Swap - 2:26pm</small>
+                                                        </div>
+                                                    </div>
+                                                    <small class="text-danger me-3">$63.98</small>
+                                                </div>
+                                            </div>                                            
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="card border-0 mb-3">
+                                                <div class="card-body p-2 d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="wallet-icon me-3 bg-green">
+                                                            <img src="./assets/images/icons/send.png" alt="" srcset="">
+                                                        </div>
+                                                        <div>
+                                                            <p class="mb-0 fw-bolder">To James Anderson</p>
+                                                            <small class="text-primary">Swap - 2:26pm</small>
+                                                        </div>
+                                                    </div>
+                                                    <small class="text-danger me-3">$63.98</small>
+                                                </div>
+                                            </div>                                            
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Total transactions start -->
+                                <div class="tab-pane fade" id="pills-transactions" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                                    <div class="row">
+                                        <!-- cards start -->
+                                        <div class="col-sm-6">
+                                            <div class="card border-0 mb-3">
+                                                <div class="card-body p-2 d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="wallet-icon me-3 bg-green">
+                                                            <img src="./assets/images/icons/send.png" alt="" srcset="">
+                                                        </div>
+                                                        <div>
+                                                            <p class="mb-0 fw-bolder">To James Anderson</p>
+                                                            <small class="text-primary">Swap - 2:26pm</small>
+                                                        </div>
+                                                    </div>
+                                                    <small class="text-danger me-3">$63.98</small>
+                                                </div>
+                                            </div>                                            
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="card border-0 mb-3">
+                                                <div class="card-body p-2 d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="wallet-icon me-3 bg-green">
+                                                            <img src="./assets/images/icons/send.png" alt="" srcset="">
+                                                        </div>
+                                                        <div>
+                                                            <p class="mb-0 fw-bolder">To James Anderson</p>
+                                                            <small class="text-primary">Swap - 2:26pm</small>
+                                                        </div>
+                                                    </div>
+                                                    <small class="text-danger me-3">$63.98</small>
+                                                </div>
+                                            </div>                                            
+                                        </div>
+                                        <!-- cards end -->
+                                    </div>
+                                </div>
+
+                                 <!-- Average value start -->
+                                 <div class="tab-pane fade" id="pills-average" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="card border-0 mb-3 bg-light p-2">
+                                                <div class="card-body">
+                                                    <div class="d-flex align-items-center justify-content-around flex-wrap mb-4 gap-2">
+                                                        <div class="text-danger d-flex align-items-center">
+                                                            <span class="analysis-icon bg-danger me-2">
+                                                            <img class="img-fluid" src="./assets/images/icons/mini-icon/send-down-2.png" alt="">
+                                                            </span> <span>₦889.00</span>
+                                                        </div>
+                                                        <div class="text-success d-flex align-items-center">
+                                                            <span class="analysis-icon bg-primary me-2">
+                                                            <img class="img-fluid" src="./assets/images/icons/mini-icon/Send-2.png" alt="">
+                                                            </span>
+                                                            <span>₦889.00</span>
+                                                        </div>
+                                                        <div class="text-black d-flex align-items-center">
+                                                            <span class="analysis-icon bg-black me-2">
+                                                            <img class="img-fluid" src="./assets/images/icons/mini-icon/account_balance-2.png" alt="">
+                                                            </span>
+                                                            <span>₦889.00</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row flex-wrap">
+                                                        <div class="col col-lg-6 mb-3">
+                                                            <div class="average-no bg-white p-3 text-center rounded-4">
+                                                                <p class="mb-1">Market Name</p>
+                                                                <h4 class="fw-bold mb-0">₦889.00</h4>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col col-lg-6 mb-3">
+                                                            <div class="average-no bg-white p-3 text-center rounded-4">
+                                                                <p class="mb-1">Market Name</p>
+                                                                <h4 class="fw-bold mb-0">₦889.00</h4>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col col-lg-6 mb-3">
+                                                            <div class="average-no bg-white p-3 text-center rounded-4">
+                                                                <p class="mb-1">Market Name</p>
+                                                                <h4 class="fw-bold mb-0">₦889.00</h4>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col col-lg-6 mb-3">
+                                                            <div class="average-no bg-white p-3 text-center rounded-4">
+                                                                <p class="mb-1">Market Name</p>
+                                                                <h4 class="fw-bold mb-0">₦889.00</h4>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col col-lg-6 mb-3">
+                                                            <div class="average-no bg-white p-3 text-center rounded-4">
+                                                                <p class="mb-1">Market Name</p>
+                                                                <h4 class="fw-bold mb-0">₦889.00</h4>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col col-lg-6 mb-3">
+                                                            <div class="average-no bg-white p-3 text-center rounded-4">
+                                                                <p class="mb-1">Market Name</p>
+                                                                <h4 class="fw-bold mb-0">₦889.00</h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>                                            
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="card border-0 mb-3 bg-light py-2">
+                                                <div class="card-body">
+                                                    <div class="d-flex align-items-center justify-content-around flex-wrap mb-4 gap-2">
+                                                        <div class="text-danger d-flex align-items-center">
+                                                            <span class="analysis-icon bg-danger me-2">
+                                                            <img class="img-fluid" src="./assets/images/icons/mini-icon/send-down-2.png" alt="">
+                                                            </span> <span>₦889.00</span>
+                                                        </div>
+                                                        <div class="text-success d-flex align-items-center">
+                                                            <span class="analysis-icon bg-primary me-2">
+                                                            <img class="img-fluid" src="./assets/images/icons/mini-icon/Send-2.png" alt="">
+                                                            </span>
+                                                            <span>₦889.00</span>
+                                                        </div>
+                                                        <div class="text-black d-flex align-items-center">
+                                                            <span class="analysis-icon bg-black me-2">
+                                                            <img class="img-fluid" src="./assets/images/icons/mini-icon/account_balance-2.png" alt="">
+                                                            </span>
+                                                            <span>₦889.00</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row flex-wrap">
+                                                        <div class="col col-lg-6 mb-3">
+                                                            <div class="average-no bg-white p-3 text-center rounded-4">
+                                                                <p class="mb-1">Market Name</p>
+                                                                <h4 class="fw-bold mb-0">₦889.00</h4>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col col-lg-6 mb-3">
+                                                            <div class="average-no bg-white p-3 text-center rounded-4">
+                                                                <p class="mb-1">Market Name</p>
+                                                                <h4 class="fw-bold mb-0">₦889.00</h4>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col col-lg-6 mb-3">
+                                                            <div class="average-no bg-white p-3 text-center rounded-4">
+                                                                <p class="mb-1">Market Name</p>
+                                                                <h4 class="fw-bold mb-0">₦889.00</h4>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col col-lg-6 mb-3">
+                                                            <div class="average-no bg-white p-3 text-center rounded-4">
+                                                                <p class="mb-1">Market Name</p>
+                                                                <h4 class="fw-bold mb-0">₦889.00</h4>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col col-lg-6 mb-3">
+                                                            <div class="average-no bg-white p-3 text-center rounded-4">
+                                                                <p class="mb-1">Market Name</p>
+                                                                <h4 class="fw-bold mb-0">₦889.00</h4>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col col-lg-6 mb-3">
+                                                            <div class="average-no bg-white p-3 text-center rounded-4">
+                                                                <p class="mb-1">Market Name</p>
+                                                                <h4 class="fw-bold mb-0">₦889.00</h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>                                            
+                                        </div>
+                                         <!-- pagination -->
+                                         <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
+                                            <p class="text-black mb-0">Showing 1 to 10 of 57 entries</p>
+                                            <div class="pagination ms-auto d-flex justify-content-around flex-wrap" role="group" aria-label="Basic example">
+                                                <a href="#" class="btn btn-outline-primary">Previous</a>
+                                                <a href="#" class="btn btn-outline-primary active">1</a>
+                                                <a href="#" class="btn btn-outline-primary">2</a>
+                                                <a href="#" class="btn btn-outline-primary">3</a>
+                                                <a href="#" class="btn btn-outline-primary">4</a>
+                                                <a href="#" class="btn btn-outline-primary">5</a>
+                                                <a href="#" class="btn btn-outline-primary">Next</a>
+                                              </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div> 
+
+        </div>
+    </div>
+
+          <!-- Script -->
+    <script src="./assets/js/bootstrap.bundle.js"></script>
+
+    <script>
+        var el = document.getElementById("dashboard-wrapper")
+        var toggleButton = document.getElementById("menu-toggle")
+
+        toggleButton.onclick = function(){
+            el.classList.toggle("toggled")
+        }
+    </script>
+</body>
+</html>

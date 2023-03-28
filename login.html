@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="./assets/css/style.css" rel="stylesheet" type="text/css" >
+</head>
+<body>
+    
+    <div id="wrapper">
+        <div class="container-fluid">
+            <div class="row login min-vh-100">
+                <div class="col-lg-6 left d-lg-flex align-items-center justify-content-center justify-content-md-start py-5 d-none">
+                    <img src="./assets/images/Rocket_Boy_Flatline.png" class="img-fluid w-75 mx-auto" alt="image">
+                </div>
+                <div class="col-lg-6 d-flex flex-column justify-content-sm-around justify-content-center align-items-center flex-wrap  py-5">
+                    <div class="logo text-center">
+                        <img src="./assets/images/logo.png" class="img-fluid img-logo" alt="image">
+                        <h3 class="main-heading mt-4">Hi,👋<br/>Welcome Back..!</h3>
+                        <p class="sub-heading">Sign In to your Swap Circle account.</p>
+                    </div>
+                    <div class=" login-tabs text-center mt-5 w-100 d-flex flex-column align-items-center">
+                        <ul class="nav nav-pills mb-5 mx-auto" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Individual</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Corporate</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                                <form action="./home.html">
+                                    <div class="form-group mb-3 position-relative">
+                                        <span class="input-icon"><img src="./assets/images/icons/email.png" class="img-fluid" ></span>
+                                        <input type="email" class="form-control" placeholder="Email" aria-label="Email">
+                                    </div>
+                                    <div class="form-group position-relative w-pass">
+                                        <span class="input-icon"><img src="./assets/images/icons/lock.png" class="img-fluid" ></span>
+                                        <input type="password" class="form-control mb-3" placeholder="Create password" aria-label="Create password">
+                                        <span class="input-icon right"><img src="./assets/images/icons/Eye-slash 1.png" class="img-fluid" ></span>
+                                        <a href="./forgot-pass.html" class="text-success float-end  mb-5">Forgot password?</a>
+                                    </div>
+                                    <button type="submit" class="btn btn-login btn-primary w-100 mt-5">Next</button>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                                <form action="./home.html">
+                                    <div class="form-group mb-3 position-relative">
+                                        <span class="input-icon"><img src="./assets/images/icons/email.png" class="img-fluid" ></span>
+                                        <input type="email" class="form-control" placeholder="Email" aria-label="Email">
+                                    </div>
+                                    <div class="form-group position-relative w-pass">
+                                        <span class="input-icon"><img src="./assets/images/icons/lock.png" class="img-fluid" ></span>
+                                        <input type="password" class="form-control mb-3" placeholder="Create password" aria-label="Create password">
+                                        <span class="input-icon right"><img src="./assets/images/icons/Eye-slash 1.png" class="img-fluid" ></span>
+                                        <a href="./forgot-pass.html" class="text-success float-end  mb-5">Forgot password?</a>
+                                    </div>
+                                    <button type="submit" class="btn btn-login btn-primary w-100 mt-5">Next</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        <!-- Script -->
+        <script src="./assets/js/bootstrap.bundle.js"></script>
+</body>
+</html>

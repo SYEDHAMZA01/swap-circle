@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./assets/css/navbar.css">
+    <link href="./assets/css/style.css" rel="stylesheet" type="text/css" >
+</head>
+<body>
+    <div class="d-flex" id="dashboard-wrapper">
+
+        <!-- Side-Navbar Start-->
+
+        <div class="bg-white" id="sidebar-wrapper">
+
+            <div class="sidebar-logo text-center p-4">
+                <img src="./assets/images/logo176X72.png" alt="image" class="img-fluid">
+            </div>
+
+            <div class="list-group list-grop-flush ">
+                <a href="./home.html" class="list-group-item list-group-item-action">
+                    <img src="./assets/images/icons/home.png" class="img-fluid me-4" alt="icon"> Home
+                </a>
+                <a href="./data-analysis.html" class="list-group-item list-group-item-action">
+                    <img src="./assets/images/icons/analytics.png" class="img-fluid me-4" alt="icon">Data Analysis
+                </a>
+                <a href="./offers.html" class="list-group-item list-group-item-action">
+                    <img src="./assets/images/icons/activity.png" class="img-fluid me-4" alt="icon">Offers
+                </a>
+                <a href="./track.html" class="list-group-item list-group-item-action">
+                    <img src="./assets/images/icons/send-2.png" class="img-fluid me-4" alt="icon">Track
+                </a>
+                <a href="./connects.html" class="list-group-item list-group-item-action">
+                    <img src="./assets/images/icons/Connect.png" class="img-fluid me-4" alt="icon">Connect
+                </a>
+                <a href="./profile.html" class="list-group-item list-group-item-action active">
+                    <img src="./assets/images/icons/Profile.png" class="img-fluid me-4" alt="icon">Profile
+                </a>
+                <a href="./message.html" class="list-group-item list-group-item-action">
+                    <img src="./assets/images/icons/mark_chat_unread.png" class="img-fluid me-4" alt="icon">Message
+                </a>
+            </div>
+
+        </div>
+
+        <!-- Side-Navbar End-->
+        <!-- navbar start -->
+        <div class="top-bar">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 py-3">
+                <div class="d-flex align-items-center">
+                    <!-- <i class="fas fa-align-left me-3 fs-4 primary-text">@</i> -->
+                    <img src="./assets/images/icons/div.png" alt="" class="img-fluid me-3"  id="menu-toggle">
+                    <h3 class="fw-bolder m-0">Dashboard</h3>
+                </div>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center flex-row">
+                    <li class="nav-item dropdown me-3 me-sm-5">
+                        <a href="#" class="nav-link d-flex align-items-center" role="button" id="navbarDropdown1" data-bs-toggle="dropdown" aria-expanded="false">
+                           <img src="./assets/images/icons/notification.png" class="img-fluid" alt="" srcset="">
+                           <span class="position-absolute top-0 start-100 translate-middle badge rounded-full bg-primary text-white">
+                            12
+                            <span class="visually-hidden">unread Notification</span>
+                          </span>
+                        </a>
+
+                        <ul class="dropdown-menu position-absolute  mt-3 dropdown-menu-end py-0" aria-labelledby="navbarDropdown2">
+                            <h6 class="dropdown-item-text font-15 m-0 py-3 border-bottom d-flex justify-content-between align-items-center">
+                                Notifications <span class="badge bg-soft-primary badge-pill">2</span>
+                            </h6>
+                            <div class="notification-menu">
+                                <!-- item-->
+                                <a href="#" class="dropdown-item py-3">
+                                    <small class="float-end text-muted ps-2">2 min ago</small>
+                                    <div class="media d-flex">
+                                        <div class="media-body align-self-center ms-2 text-truncate">
+                                            <h6 class="my-0 fw-normal text-dark">Your order is placed</h6>
+                                            <small class="text-muted mb-0">Dummy text of the printing and
+                                                industry.</small>
+                                        </div>
+                                        <!--end media-body-->
+                                    </div>
+                                    <!--end media-->
+                                </a>
+                                <!--end-item-->
+                                <!-- item-->
+                                <a href="#" class="dropdown-item py-3">
+                                    <small class="float-end text-muted ps-2">10 min ago</small>
+                                    <div class="media d-flex">
+                                        <div class="media-body align-self-center ms-2 text-truncate">
+                                            <h6 class="my-0 fw-normal text-dark">Meeting with designers</h6>
+                                            <small class="text-muted mb-0">It is a long established fact that a
+                                                reader.</small>
+                                        </div>
+                                        <!--end media-body-->
+                                    </div>
+                                    <!--end media-->
+                                </a>
+                                <!--end-item-->
+                                <!-- item-->
+                                <a href="#" class="dropdown-item py-3">
+                                    <small class="float-end text-muted ps-2">40 min ago</small>
+                                    <div class="media d-flex">
+                                        <div class="media-body align-self-center ms-2 text-truncate">
+                                            <h6 class="my-0 fw-normal text-dark">UX 3 Task complete.</h6>
+                                            <small class="text-muted mb-0">Dummy text of the printing.</small>
+                                        </div>
+                                        <!--end media-body-->
+                                    </div>
+                                    <!--end media-->
+                                </a>
+                                <!--end-item-->
+                                <!-- item-->
+                                <a href="#" class="dropdown-item py-3">
+                                    <small class="float-end text-muted ps-2">1 hr ago</small>
+                                    <div class="media d-flex">
+                                        <div class="media-body align-self-center ms-2 text-truncate">
+                                            <h6 class="my-0 fw-normal text-dark">Your order is placed</h6>
+                                            <small class="text-muted mb-0">It is a long established fact that a
+                                                reader.</small>
+                                        </div>
+                                        <!--end media-body-->
+                                    </div>
+                                    <!--end media-->
+                                </a>
+                                <!--end-item-->
+                                <!-- item-->
+                                <a href="#" class="dropdown-item py-3">
+                                    <small class="float-end text-muted ps-2">2 hrs ago</small>
+                                    <div class="media d-flex">
+                                        <div class="avatar-md bg-soft-primary">
+                                            <i class="ti ti-users"></i>
+                                        </div>
+                                        <div class="media-body align-self-center ms-2 text-truncate">
+                                            <h6 class="my-0 fw-normal text-dark">Payment Successfull</h6>
+                                            <small class="text-muted mb-0">Dummy text of the printing.</small>
+                                        </div>
+                                        <!--end media-body-->
+                                    </div>
+                                    <!--end media-->
+                                </a>
+                                <!--end-item-->
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown me-3 me-sm-5">
+                        <a href="#" class="nav-link d-flex align-items-center" role="button" id="navbarDropdown2" data-bs-toggle="dropdown" aria-expanded="false">
+                           <img src="./assets/images/icons/messages-2.png" class="img-fluid" alt="" srcset="">
+                           <span class="position-absolute top-0 start-100 translate-middle badge rounded-full bg-primary text-white">
+                            5
+                            <span class="visually-hidden">unread messages</span>
+                          </span>
+                        </a>
+
+                        <ul class="dropdown-menu position-absolute  mt-3 dropdown-menu-end py-0" aria-labelledby="navbarDropdown2">
+                            <h6 class="dropdown-item-text font-15 m-0 py-3 border-bottom d-flex justify-content-between align-items-center">
+                                Messenges <span class="badge bg-soft-primary badge-pill">2</span>
+                            </h6>
+                            <div class="notification-menu">
+                                <!-- item-->
+                                <a href="#" class="dropdown-item py-3">
+                                    <small class="float-end text-muted ps-2">2 min ago</small>
+                                    <div class="media d-flex">
+                                        <div class="media-body align-self-center ms-2 text-truncate">
+                                            <h6 class="my-0 fw-normal text-dark">Your order is placed</h6>
+                                            <small class="text-muted mb-0">Dummy text of the printing and
+                                                industry.</small>
+                                        </div>
+                                        <!--end media-body-->
+                                    </div>
+                                    <!--end media-->
+                                </a>
+                                <!--end-item-->
+                                <!-- item-->
+                                <a href="#" class="dropdown-item py-3">
+                                    <small class="float-end text-muted ps-2">10 min ago</small>
+                                    <div class="media d-flex">
+                                        <div class="media-body align-self-center ms-2 text-truncate">
+                                            <h6 class="my-0 fw-normal text-dark">Meeting with designers</h6>
+                                            <small class="text-muted mb-0">It is a long established fact that a
+                                                reader.</small>
+                                        </div>
+                                        <!--end media-body-->
+                                    </div>
+                                    <!--end media-->
+                                </a>
+                                <!--end-item-->
+                                <!-- item-->
+                                <a href="#" class="dropdown-item py-3">
+                                    <small class="float-end text-muted ps-2">40 min ago</small>
+                                    <div class="media d-flex">
+                                        <div class="media-body align-self-center ms-2 text-truncate">
+                                            <h6 class="my-0 fw-normal text-dark">UX 3 Task complete.</h6>
+                                            <small class="text-muted mb-0">Dummy text of the printing.</small>
+                                        </div>
+                                        <!--end media-body-->
+                                    </div>
+                                    <!--end media-->
+                                </a>
+                                <!--end-item-->
+                                <!-- item-->
+                                <a href="#" class="dropdown-item py-3">
+                                    <small class="float-end text-muted ps-2">1 hr ago</small>
+                                    <div class="media d-flex">
+                                        <div class="media-body align-self-center ms-2 text-truncate">
+                                            <h6 class="my-0 fw-normal text-dark">Your order is placed</h6>
+                                            <small class="text-muted mb-0">It is a long established fact that a
+                                                reader.</small>
+                                        </div>
+                                        <!--end media-body-->
+                                    </div>
+                                    <!--end media-->
+                                </a>
+                                <!--end-item-->
+                                <!-- item-->
+                                <a href="#" class="dropdown-item py-3">
+                                    <small class="float-end text-muted ps-2">2 hrs ago</small>
+                                    <div class="media d-flex">
+                                        <div class="avatar-md bg-soft-primary">
+                                            <i class="ti ti-users"></i>
+                                        </div>
+                                        <div class="media-body align-self-center ms-2 text-truncate">
+                                            <h6 class="my-0 fw-normal text-dark">Payment Successfull</h6>
+                                            <small class="text-muted mb-0">Dummy text of the printing.</small>
+                                        </div>
+                                        <!--end media-body-->
+                                    </div>
+                                    <!--end media-->
+                                </a>
+                                <!--end-item-->
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a href="#" class="nav-link d-flex align-items-center" role="button" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                           <div class="me-4 d-none d-lg-block">
+                            <h5 class="sub-heading text-black mb-1 fw-bolder">Hi, Jerome Bell</h5>
+                            <span>Hello</span>
+                           </div> <img src="./assets/images/17.jpg.png" class="img-fluid" alt="" srcset="">
+                        </a>
+
+                        <ul class="dropdown-menu position-absolute  dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <li class=""><a href="./login.html" class="dropdown-item d-flex  align-items-center">
+                                <?xml version="1.0" ?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                                   <svg width="28px" height="28px" viewBox="0 0 1000 1000" data-name="Layer 2" id="Layer_2" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:none;stroke:#020202;stroke-linecap:round;stroke-miterlimit:10;stroke-width:22px;}.cls-2{fill:#020202;}</style></defs><path class="cls-1" d="M591.61,280.48C693.9,317.86,766.91,416,766.91,531.26c0,147.41-119.5,266.91-266.91,266.91S233.09,678.67,233.09,531.26c0-115.22,73-213.4,175.3-250.78"/><rect class="cls-2" height="160.61" rx="35.92" width="71.84" x="464.08" y="201.83"/></svg>
+                                <span class=" d-inline-block">Logout</span>
+                            </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- navbar end -->
+
+            <!-- content -->
+        <div class="page-content-wrapper">
+            <div class="page-content-tab">
+                <div class="container-fluid px-4 pb-4">
+                    <!-- body start -->
+                    <div class="profile-faq">
+                      <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb d-flex align-items-center">
+                            <li class="breadcrumb-item"><a href="./profile.html" class="text-primary">Profile</a></li>
+                            <li class="mx-3">
+                                <svg width="5" height="10" viewBox="0 0 5 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.21749 3.11406C5.22417 4.12074 5.25773 5.73205 4.31816 6.77904L4.21749 6.88529L1.47119 9.47108C1.21084 9.73143 0.788734 9.73143 0.528385 9.47108C0.288062 9.23076 0.269576 8.8526 0.472926 8.59107L0.528385 8.52827L3.27468 5.94248C3.76797 5.44919 3.79393 4.66553 3.35257 4.14168L3.27468 4.05687L0.528385 1.47108C0.268035 1.21073 0.268035 0.78862 0.528385 0.52827C0.768707 0.287947 1.14686 0.269461 1.40839 0.472811L1.47119 0.52827L4.21749 3.11406Z" fill="#21333B"/>
+                                </svg>
+                                </li>
+                            <li class="breadcrumb-item active" aria-current="page"><a href="#">FAQ</a></li> 
+                        </ol>
+                      </nav>
+                    </div>
+                    <!-- faq -->
+                        <div class="row mt-5">
+                            <div class="cal-12">
+                                <!-- start -->
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Fusce volutpat lectus et nisl consecte?
+                                        </button>
+                                      </h2>
+                                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body pt-0">
+                                            Fusce volutpat lectus et nisl consectetur finibus. In vitae scelerisque augue, in varius eros. Nunc sapien diam, euismod et pretium id, volutpat et tortor. In vulputate lorem quis dui vestibulum, vitae imperdiet diam bibendum. Maecenas scelerisque orci a dolor vestibulum sagittis. Etiam quis finibus arcu, vel efficitur diam. Curabitur felis eros, vestibulum sed nisi eu, sodales aliquet lacus. Mauris lacinia quam quis feugiat laoreet. Etiam lobortis aliquet euismod. Nunc dictum, sapien at egestas rutrum, dui dui fringilla erat, a commodo augue augue vel magna. Sed tincidunt ante turpis, rhoncus commodo risus fringilla vel. Maecenas lacinia nisl a sem ornare pharetra. Donec imperdiet justo et elementum iaculis.Fusce volutpat lectus et nisl consectetur finibus. In vitae scelerisque augue, in varius eros. Nunc sapien diam, euismod et pretium id, volutpat et tortor. In vulputate lorem quis dui vestibulum, vitae imperdiet diam bibendum. Maecenas scelerisque orci a dolor vestibulum sagittis. Etiam quis finibus arcu, vel efficitur diam. Curabitur felis eros, vestibulum sed nisi eu, sodales aliquet lacus. Mauris lacinia quam quis feugiat laoreet. Etiam lobortis aliquet euismod. Nunc dictum, sapien at egestas rutrum, dui dui fringilla erat, a commodo augue augue vel magna. Sed tincidunt ante turpis, rhoncus commodo risus fringilla vel. Maecenas lacinia nisl a sem ornare pharetra. Donec imperdiet justo et elementum iaculis. 
+                                            <br/><br/>
+                                            Fusce volutpat lectus et nisl consectetur finibus. In vitae scelerisque augue, in varius eros. Nunc sapien diam, euismod et pretium id, volutpat et tortor. In vulputate lorem quis dui vestibulum, vitae imperdiet diam bibendum. Maecenas scelerisque orci a dolor vestibulum sagittis. Etiam quis finibus arcu, vel efficitur diam. Curabitur felis eros, vestibulum sed nisi eu, sodales aliquet lacus. Mauris lacinia quam quis feugiat laoreet. Etiam lobortis aliquet euismod. Nunc dictum, sapien at egestas rutrum, dui dui fringilla erat, a commodo augue augue vel magna. Sed tincidunt ante turpis, rhoncus commodo risus fringilla vel. Maecenas lacinia nisl a sem ornare pharetra. Donec imperdiet justo et elementum iaculis.                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button bg-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            Fusce volutpat lectus et nisl consecte?
+                                        </button>
+                                      </h2>
+                                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body pt-0">
+                                            Fusce volutpat lectus et nisl consectetur finibus. In vitae scelerisque augue, in varius eros. Nunc sapien .Fusce volutpat lectus et nisl consectetur finibus. In vitae scelerisque augue, in varius eros. Nunc sapien.Fusce volutpat lectus et nisl consectetur finibus. In vitae scelerisque augue, in varius eros. Nunc sapien. Fusce volutpat lectus et nisl consectetur finibus. In vitae scelerisque augue, in varius eros. Nunc sapien.........                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button bg-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            Fusce volutpat lectus et nisl consecte?
+                                        </button>
+                                      </h2>
+                                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body pt-0">
+                                            Fusce volutpat lectus et nisl consectetur finibus. In vitae scelerisque augue, in varius eros. Nunc sapien .Fusce volutpat lectus et nisl consectetur finibus. In vitae scelerisque augue, in varius eros. Nunc sapien.Fusce volutpat lectus et nisl consectetur finibus. In vitae scelerisque augue, in varius eros. Nunc sapien. Fusce volutpat lectus et nisl consectetur finibus. In vitae scelerisque augue, in varius eros. Nunc sapien.........                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                <!-- end -->
+                                <!-- pagination -->
+                                <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mt-3">
+                                <p class="text-black mb-0">Showing 1 to 10 of 57 entries</p>
+                                <div class="pagination ms-auto d-flex justify-content-around flex-wrap" role="group" aria-label="Basic example">
+                                    <a href="#" class="btn btn-outline-primary btn-prev">Previous</a>
+                                    <a href="#" class="btn btn-outline-primary active">1</a>
+                                    <a href="#" class="btn btn-outline-primary">2</a>
+                                    <a href="#" class="btn btn-outline-primary">3</a>
+                                    <a href="#" class="btn btn-outline-primary">4</a>
+                                    <a href="#" class="btn btn-outline-primary">5</a>
+                                    <a href="#" class="btn btn-outline-primary btn-next">Next</a>
+                                    </div>
+                            </div>
+                            </div>
+                        </div>
+                    <!-- body end -->
+                </div>
+            </div> 
+
+        </div>
+    </div>
+
+          <!-- Script -->
+    <script src="./assets/js/bootstrap.bundle.js"></script>
+
+    <script>
+        var el = document.getElementById("dashboard-wrapper")
+        var toggleButton = document.getElementById("menu-toggle")
+
+        toggleButton.onclick = function(){
+            el.classList.toggle("toggled")
+        }
+    </script>
+</body>
+</html>

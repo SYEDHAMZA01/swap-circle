@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./assets/css/navbar.css">
+    <link href="./assets/css/style.css" rel="stylesheet" type="text/css" >
+</head>
+<body>
+    <div class="d-flex" id="dashboard-wrapper">
+
+        <!-- Side-Navbar Start-->
+
+        <div class="bg-white" id="sidebar-wrapper">
+
+            <div class="sidebar-logo text-center p-4">
+                <img src="./assets/images/logo176X72.png" alt="image" class="img-fluid">
+            </div>
+
+            <div class="list-group list-grop-flush ">
+                <a href="./home.html" class="list-group-item list-group-item-action">
+                    <img src="./assets/images/icons/home.png" class="img-fluid me-4" alt="icon"> Home
+                </a>
+                <a href="./data-analysis.html" class="list-group-item list-group-item-action">
+                    <img src="./assets/images/icons/analytics.png" class="img-fluid me-4" alt="icon">Data Analysis
+                </a>
+                <a href="./offers.html" class="list-group-item list-group-item-action active">
+                    <img src="./assets/images/icons/activity.png" class="img-fluid me-4" alt="icon">Offers
+                </a>
+                <a href="./track.html" class="list-group-item list-group-item-action">
+                    <img src="./assets/images/icons/send-2.png" class="img-fluid me-4" alt="icon">Track
+                </a>
+                <a href="./connects.html" class="list-group-item list-group-item-action">
+                    <img src="./assets/images/icons/Connect.png" class="img-fluid me-4" alt="icon">Connect
+                </a>
+                <a href="./profile.html" class="list-group-item list-group-item-action">
+                    <img src="./assets/images/icons/Profile.png" class="img-fluid me-4" alt="icon">Profile
+                </a>
+                <a href="./message.html" class="list-group-item list-group-item-action">
+                    <img src="./assets/images/icons/mark_chat_unread.png" class="img-fluid me-4" alt="icon">Message
+                </a>
+            </div>
+
+        </div>
+
+        <!-- Side-Navbar End-->
+        <!-- navbar start -->
+        <div class="top-bar">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 py-3">
+                <div class="d-flex align-items-center">
+                    <!-- <i class="fas fa-align-left me-3 fs-4 primary-text">@</i> -->
+                    <img src="./assets/images/icons/div.png" alt="" class="img-fluid me-3"  id="menu-toggle">
+                    <h3 class="fw-bolder m-0">Dashboard</h3>
+                </div>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center flex-row">
+                    <li class="nav-item dropdown me-3 me-sm-5">
+                        <a href="#" class="nav-link d-flex align-items-center" role="button" id="navbarDropdown1" data-bs-toggle="dropdown" aria-expanded="false">
+                           <img src="./assets/images/icons/notification.png" class="img-fluid" alt="" srcset="">
+                           <span class="position-absolute top-0 start-100 translate-middle badge rounded-full bg-primary text-white">
+                            12
+                            <span class="visually-hidden">unread Notification</span>
+                          </span>
+                        </a>
+
+                        <ul class="dropdown-menu position-absolute  mt-3 dropdown-menu-end py-0" aria-labelledby="navbarDropdown2">
+                            <h6 class="dropdown-item-text font-15 m-0 py-3 border-bottom d-flex justify-content-between align-items-center">
+                                Notifications <span class="badge bg-soft-primary badge-pill">2</span>
+                            </h6>
+                            <div class="notification-menu">
+                                <!-- item-->
+                                <a href="#" class="dropdown-item py-3">
+                                    <small class="float-end text-muted ps-2">2 min ago</small>
+                                    <div class="media d-flex">
+                                        <div class="media-body align-self-center ms-2 text-truncate">
+                                            <h6 class="my-0 fw-normal text-dark">Your order is placed</h6>
+                                            <small class="text-muted mb-0">Dummy text of the printing and
+                                                industry.</small>
+                                        </div>
+                                        <!--end media-body-->
+                                    </div>
+                                    <!--end media-->
+                                </a>
+                                <!--end-item-->
+                                <!-- item-->
+                                <a href="#" class="dropdown-item py-3">
+                                    <small class="float-end text-muted ps-2">10 min ago</small>
+                                    <div class="media d-flex">
+                                        <div class="media-body align-self-center ms-2 text-truncate">
+                                            <h6 class="my-0 fw-normal text-dark">Meeting with designers</h6>
+                                            <small class="text-muted mb-0">It is a long established fact that a
+                                                reader.</small>
+                                        </div>
+                                        <!--end media-body-->
+                                    </div>
+                                    <!--end media-->
+                                </a>
+                                <!--end-item-->
+                                <!-- item-->
+                                <a href="#" class="dropdown-item py-3">
+                                    <small class="float-end text-muted ps-2">40 min ago</small>
+                                    <div class="media d-flex">
+                                        <div class="media-body align-self-center ms-2 text-truncate">
+                                            <h6 class="my-0 fw-normal text-dark">UX 3 Task complete.</h6>
+                                            <small class="text-muted mb-0">Dummy text of the printing.</small>
+                                        </div>
+                                        <!--end media-body-->
+                                    </div>
+                                    <!--end media-->
+                                </a>
+                                <!--end-item-->
+                                <!-- item-->
+                                <a href="#" class="dropdown-item py-3">
+                                    <small class="float-end text-muted ps-2">1 hr ago</small>
+                                    <div class="media d-flex">
+                                        <div class="media-body align-self-center ms-2 text-truncate">
+                                            <h6 class="my-0 fw-normal text-dark">Your order is placed</h6>
+                                            <small class="text-muted mb-0">It is a long established fact that a
+                                                reader.</small>
+                                        </div>
+                                        <!--end media-body-->
+                                    </div>
+                                    <!--end media-->
+                                </a>
+                                <!--end-item-->
+                                <!-- item-->
+                                <a href="#" class="dropdown-item py-3">
+                                    <small class="float-end text-muted ps-2">2 hrs ago</small>
+                                    <div class="media d-flex">
+                                        <div class="avatar-md bg-soft-primary">
+                                            <i class="ti ti-users"></i>
+                                        </div>
+                                        <div class="media-body align-self-center ms-2 text-truncate">
+                                            <h6 class="my-0 fw-normal text-dark">Payment Successfull</h6>
+                                            <small class="text-muted mb-0">Dummy text of the printing.</small>
+                                        </div>
+                                        <!--end media-body-->
+                                    </div>
+                                    <!--end media-->
+                                </a>
+                                <!--end-item-->
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown me-3 me-sm-5">
+                        <a href="#" class="nav-link d-flex align-items-center" role="button" id="navbarDropdown2" data-bs-toggle="dropdown" aria-expanded="false">
+                           <img src="./assets/images/icons/messages-2.png" class="img-fluid" alt="" srcset="">
+                           <span class="position-absolute top-0 start-100 translate-middle badge rounded-full bg-primary text-white">
+                            5
+                            <span class="visually-hidden">unread messages</span>
+                          </span>
+                        </a>
+
+                        <ul class="dropdown-menu position-absolute  mt-3 dropdown-menu-end py-0" aria-labelledby="navbarDropdown2">
+                            <h6 class="dropdown-item-text font-15 m-0 py-3 border-bottom d-flex justify-content-between align-items-center">
+                                Messenges <span class="badge bg-soft-primary badge-pill">2</span>
+                            </h6>
+                            <div class="notification-menu">
+                                <!-- item-->
+                                <a href="#" class="dropdown-item py-3">
+                                    <small class="float-end text-muted ps-2">2 min ago</small>
+                                    <div class="media d-flex">
+                                        <div class="media-body align-self-center ms-2 text-truncate">
+                                            <h6 class="my-0 fw-normal text-dark">Your order is placed</h6>
+                                            <small class="text-muted mb-0">Dummy text of the printing and
+                                                industry.</small>
+                                        </div>
+                                        <!--end media-body-->
+                                    </div>
+                                    <!--end media-->
+                                </a>
+                                <!--end-item-->
+                                <!-- item-->
+                                <a href="#" class="dropdown-item py-3">
+                                    <small class="float-end text-muted ps-2">10 min ago</small>
+                                    <div class="media d-flex">
+                                        <div class="media-body align-self-center ms-2 text-truncate">
+                                            <h6 class="my-0 fw-normal text-dark">Meeting with designers</h6>
+                                            <small class="text-muted mb-0">It is a long established fact that a
+                                                reader.</small>
+                                        </div>
+                                        <!--end media-body-->
+                                    </div>
+                                    <!--end media-->
+                                </a>
+                                <!--end-item-->
+                                <!-- item-->
+                                <a href="#" class="dropdown-item py-3">
+                                    <small class="float-end text-muted ps-2">40 min ago</small>
+                                    <div class="media d-flex">
+                                        <div class="media-body align-self-center ms-2 text-truncate">
+                                            <h6 class="my-0 fw-normal text-dark">UX 3 Task complete.</h6>
+                                            <small class="text-muted mb-0">Dummy text of the printing.</small>
+                                        </div>
+                                        <!--end media-body-->
+                                    </div>
+                                    <!--end media-->
+                                </a>
+                                <!--end-item-->
+                                <!-- item-->
+                                <a href="#" class="dropdown-item py-3">
+                                    <small class="float-end text-muted ps-2">1 hr ago</small>
+                                    <div class="media d-flex">
+                                        <div class="media-body align-self-center ms-2 text-truncate">
+                                            <h6 class="my-0 fw-normal text-dark">Your order is placed</h6>
+                                            <small class="text-muted mb-0">It is a long established fact that a
+                                                reader.</small>
+                                        </div>
+                                        <!--end media-body-->
+                                    </div>
+                                    <!--end media-->
+                                </a>
+                                <!--end-item-->
+                                <!-- item-->
+                                <a href="#" class="dropdown-item py-3">
+                                    <small class="float-end text-muted ps-2">2 hrs ago</small>
+                                    <div class="media d-flex">
+                                        <div class="avatar-md bg-soft-primary">
+                                            <i class="ti ti-users"></i>
+                                        </div>
+                                        <div class="media-body align-self-center ms-2 text-truncate">
+                                            <h6 class="my-0 fw-normal text-dark">Payment Successfull</h6>
+                                            <small class="text-muted mb-0">Dummy text of the printing.</small>
+                                        </div>
+                                        <!--end media-body-->
+                                    </div>
+                                    <!--end media-->
+                                </a>
+                                <!--end-item-->
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a href="#" class="nav-link d-flex align-items-center" role="button" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                           <div class="me-4 d-none d-lg-block">
+                            <h5 class="sub-heading text-black mb-1 fw-bolder">Hi, Jerome Bell</h5>
+                            <span>Hello</span>
+                           </div> <img src="./assets/images/17.jpg.png" class="img-fluid" alt="" srcset="">
+                        </a>
+
+                        <ul class="dropdown-menu position-absolute  dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <li class=""><a href="./login.html" class="dropdown-item d-flex  align-items-center">
+                                <?xml version="1.0" ?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                                   <svg width="28px" height="28px" viewBox="0 0 1000 1000" data-name="Layer 2" id="Layer_2" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:none;stroke:#020202;stroke-linecap:round;stroke-miterlimit:10;stroke-width:22px;}.cls-2{fill:#020202;}</style></defs><path class="cls-1" d="M591.61,280.48C693.9,317.86,766.91,416,766.91,531.26c0,147.41-119.5,266.91-266.91,266.91S233.09,678.67,233.09,531.26c0-115.22,73-213.4,175.3-250.78"/><rect class="cls-2" height="160.61" rx="35.92" width="71.84" x="464.08" y="201.83"/></svg>
+                                <span class=" d-inline-block">Logout</span>
+                            </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- navbar end -->
+
+            <!-- content -->
+        <div class="page-content-wrapper">
+            <div class="page-content-tab">
+                <div class="container-fluid px-4 pb-4">
+                    <!-- body start -->
+                    <div class="d-flex flex-wrap justify-content-between align-items-center gap-3">
+                        <h3 class="fw-bold sub-heading text-black">Marketplace</h3>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="" role="button" id="navbarDropdown2" data-bs-toggle="dropdown" aria-expanded="false">
+                               <img src="./assets/images/icons/filter.png" class="img-fluid w-35" alt="" srcset="">
+                            </a>
+
+                            <ul class="dropdown-menu position-absolute  mt-3 dropdown-menu-end" aria-labelledby="navbarDropdown2">
+                                <li><a href="#" class="dropdown-item fw-bold py-2">Today</a></li>
+                                <li><a href="#" class="dropdown-item fw-bold py-2">Week</a></li>
+                                <li><a href="#" class="dropdown-item fw-bold py-2">Month</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="offers-wrapper">
+                       <!-- create categories -->
+                        <div class="wallet-tabs mt-4">
+                            <ul class="nav nav-pills mb-4 mx-auto" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-all-offers" type="button" role="tab" aria-controls="pills-all-offers" aria-selected="true">All Offers</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-favorite" type="button" role="tab" aria-controls="pills-favorite" aria-selected="false">Favorite</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-my-offers" type="button" role="tab" aria-controls="pills-my-offers" aria-selected="false">My Offers</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="pills-tabContent">
+                                <!-- All offers start -->
+                                <div class="tab-pane fade show active" id="pills-all-offers" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                                    <div class="row">
+                                        <!-- cards start -->
+                                        <div class="col-md-6 col-xl-4">
+                                            <div class="card border-0 mb-3">
+                                                <div class="card-body">
+                                                    <div class="d-flex align-items-center justify-content-between border-bottom pb-3 mb-3 flex-wrap gap-1">
+                                                        <div class="d-flex align-items-center">
+                                                            <p class="mb-0">£1</p>
+                                                            <span class="plane-icon bg-primary mx-2">
+                                                                <img src="./assets/images/icons/mini-icon/Repeat.png" class="img-fluid" alt="">
+                                                            </span>
+                                                            <p class="mb-0">₦890.00</p>
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <img src="./assets/images/icons/clock.png" class="img-fluid" alt="">
+                                                            <small class="ms-1 mb-0 text-primary">24 hrs ago</small>
+                                                            <img src="./assets/images/icons/heart.png" class=" ms-3 img-fluid" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="offers-card-body d-flex align-items-center justify-content-between flex-wrap gap-1">
+                                                        <div class="mb-0">
+                                                            <small class="text-primary mb-2">You Pay</small>
+                                                            <p class="my-1"><span class="text-success">£</span>1000.<small>00</small></p>
+                                                        </div>
+                                                        <div class="mb-0 d-flex align-items-center">
+                                                            <img src="./assets/images/flags/flag-2.png" class="img-fluid" alt="">
+                                                            <small class="mx-2">GBP/NGN</small>
+                                                            <img src="./assets/images/flags/flag-3.png" class="img-fluid" alt="">
+                                                        </div>
+                                                        <div class="mb-0 text-end">
+                                                            <small class="text-primary mb-2">You Pay</small>
+                                                            <p class="my-1"><span class="text-success">₦</span>890,000.<small>00</small></p>
+                                                        </div>
+                                                    </div>
+                                                    <small class="text-primary">(Inc. Service charges  £10.00)</small>
+                                                </div>
+                                            </div>                                            
+                                        </div>
+                                        <div class="col-md-6 col-xl-4">
+                                            <div class="card border-0 mb-3">
+                                                <div class="card-body">
+                                                    <div class="d-flex align-items-center justify-content-between border-bottom pb-3 mb-3 flex-wrap gap-1">
+                                                        <div class="d-flex align-items-center">
+                                                            <p class="mb-0">£1</p>
+                                                            <span class="plane-icon bg-primary mx-2">
+                                                                <img src="./assets/images/icons/mini-icon/Repeat.png" class="img-fluid" alt="">
+                                                            </span>
+                                                            <p class="mb-0">₦890.00</p>
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <img src="./assets/images/icons/clock.png" class="img-fluid" alt="">
+                                                            <small class="ms-1 mb-0 text-primary">24 hrs ago</small>
+                                                            <img src="./assets/images/icons/heart.png" class=" ms-3 img-fluid" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="offers-card-body d-flex align-items-center justify-content-between flex-wrap gap-1">
+                                                        <div class="mb-0">
+                                                            <small class="text-primary mb-2">You Pay</small>
+                                                            <p class="my-1"><span class="text-success">£</span>1000.<small>00</small></p>
+                                                        </div>
+                                                        <div class="mb-0 d-flex align-items-center">
+                                                            <img src="./assets/images/flags/flag-2.png" class="img-fluid" alt="">
+                                                            <small class="mx-2">GBP/NGN</small>
+                                                            <img src="./assets/images/flags/flag-3.png" class="img-fluid" alt="">
+                                                        </div>
+                                                        <div class="mb-0 text-end">
+                                                            <small class="text-primary mb-2">You Pay</small>
+                                                            <p class="my-1"><span class="text-success">₦</span>890,000.<small>00</small></p>
+                                                        </div>
+                                                    </div>
+                                                    <small class="text-primary">(Inc. Service charges  £10.00)</small>
+                                                </div>
+                                            </div>                                            
+                                        </div>
+                                        <div class="col-md-6 col-xl-4">
+                                            <div class="card border-0 mb-3">
+                                                <div class="card-body">
+                                                    <div class="d-flex align-items-center justify-content-between border-bottom pb-3 mb-3 flex-wrap gap-1">
+                                                        <div class="d-flex align-items-center">
+                                                            <p class="mb-0">£1</p>
+                                                            <span class="plane-icon bg-primary mx-2">
+                                                                <img src="./assets/images/icons/mini-icon/Repeat.png" class="img-fluid" alt="">
+                                                            </span>
+                                                            <p class="mb-0">₦890.00</p>
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <img src="./assets/images/icons/clock.png" class="img-fluid" alt="">
+                                                            <small class="ms-1 mb-0 text-primary">24 hrs ago</small>
+                                                            <img src="./assets/images/icons/heart.png" class=" ms-3 img-fluid" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="offers-card-body d-flex align-items-center justify-content-between flex-wrap gap-1">
+                                                        <div class="mb-0">
+                                                            <small class="text-primary mb-2">You Pay</small>
+                                                            <p class="my-1"><span class="text-success">£</span>1000.<small>00</small></p>
+                                                        </div>
+                                                        <div class="mb-0 d-flex align-items-center">
+                                                            <img src="./assets/images/flags/flag-2.png" class="img-fluid" alt="">
+                                                            <small class="mx-2">GBP/NGN</small>
+                                                            <img src="./assets/images/flags/flag-3.png" class="img-fluid" alt="">
+                                                        </div>
+                                                        <div class="mb-0 text-end">
+                                                            <small class="text-primary mb-2">You Pay</small>
+                                                            <p class="my-1"><span class="text-success">₦</span>890,000.<small>00</small></p>
+                                                        </div>
+                                                    </div>
+                                                    <small class="text-primary">(Inc. Service charges  £10.00)</small>
+                                                </div>
+                                            </div>                                            
+                                        </div>
+                                        <div class="col-md-6 col-xl-4">
+                                            <div class="card border-0 mb-3">
+                                                <div class="card-body">
+                                                    <div class="d-flex align-items-center justify-content-between border-bottom pb-3 mb-3 flex-wrap gap-1">
+                                                        <div class="d-flex align-items-center">
+                                                            <p class="mb-0">£1</p>
+                                                            <span class="plane-icon bg-primary mx-2">
+                                                                <img src="./assets/images/icons/mini-icon/Repeat.png" class="img-fluid" alt="">
+                                                            </span>
+                                                            <p class="mb-0">₦890.00</p>
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <img src="./assets/images/icons/clock.png" class="img-fluid" alt="">
+                                                            <small class="ms-1 mb-0 text-primary">24 hrs ago</small>
+                                                            <img src="./assets/images/icons/heart.png" class=" ms-3 img-fluid" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="offers-card-body d-flex align-items-center justify-content-between flex-wrap gap-1">
+                                                        <div class="mb-0">
+                                                            <small class="text-primary mb-2">You Pay</small>
+                                                            <p class="my-1"><span class="text-success">£</span>1000.<small>00</small></p>
+                                                        </div>
+                                                        <div class="mb-0 d-flex align-items-center">
+                                                            <img src="./assets/images/flags/flag-2.png" class="img-fluid" alt="">
+                                                            <small class="mx-2">GBP/NGN</small>
+                                                            <img src="./assets/images/flags/flag-3.png" class="img-fluid" alt="">
+                                                        </div>
+                                                        <div class="mb-0 text-end">
+                                                            <small class="text-primary mb-2">You Pay</small>
+                                                            <p class="my-1"><span class="text-success">₦</span>890,000.<small>00</small></p>
+                                                        </div>
+                                                    </div>
+                                                    <small class="text-primary">(Inc. Service charges  £10.00)</small>
+                                                </div>
+                                            </div>                                            
+                                        </div>
+                                        <div class="col-md-6 col-xl-4">
+                                            <div class="card border-0 mb-3">
+                                                <div class="card-body">
+                                                    <div class="d-flex align-items-center justify-content-between border-bottom pb-3 mb-3 flex-wrap gap-1">
+                                                        <div class="d-flex align-items-center">
+                                                            <p class="mb-0">£1</p>
+                                                            <span class="plane-icon bg-primary mx-2">
+                                                                <img src="./assets/images/icons/mini-icon/Repeat.png" class="img-fluid" alt="">
+                                                            </span>
+                                                            <p class="mb-0">₦890.00</p>
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <img src="./assets/images/icons/clock.png" class="img-fluid" alt="">
+                                                            <small class="ms-1 mb-0 text-primary">24 hrs ago</small>
+                                                            <img src="./assets/images/icons/heart.png" class=" ms-3 img-fluid" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="offers-card-body d-flex align-items-center justify-content-between flex-wrap gap-1">
+                                                        <div class="mb-0">
+                                                            <small class="text-primary mb-2">You Pay</small>
+                                                            <p class="my-1"><span class="text-success">£</span>1000.<small>00</small></p>
+                                                        </div>
+                                                        <div class="mb-0 d-flex align-items-center">
+                                                            <img src="./assets/images/flags/flag-2.png" class="img-fluid" alt="">
+                                                            <small class="mx-2">GBP/NGN</small>
+                                                            <img src="./assets/images/flags/flag-3.png" class="img-fluid" alt="">
+                                                        </div>
+                                                        <div class="mb-0 text-end">
+                                                            <small class="text-primary mb-2">You Pay</small>
+                                                            <p class="my-1"><span class="text-success">₦</span>890,000.<small>00</small></p>
+                                                        </div>
+                                                    </div>
+                                                    <small class="text-primary">(Inc. Service charges  £10.00)</small>
+                                                </div>
+                                            </div>                                            
+                                        </div>
+                                        <div class="col-md-6 col-xl-4">
+                                            <div class="card border-0 mb-3">
+                                                <div class="card-body">
+                                                    <div class="d-flex align-items-center justify-content-between border-bottom pb-3 mb-3 flex-wrap gap-1">
+                                                        <div class="d-flex align-items-center">
+                                                            <p class="mb-0">£1</p>
+                                                            <span class="plane-icon bg-primary mx-2">
+                                                                <img src="./assets/images/icons/mini-icon/Repeat.png" class="img-fluid" alt="">
+                                                            </span>
+                                                            <p class="mb-0">₦890.00</p>
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <img src="./assets/images/icons/clock.png" class="img-fluid" alt="">
+                                                            <small class="ms-1 mb-0 text-primary">24 hrs ago</small>
+                                                            <img src="./assets/images/icons/heart.png" class=" ms-3 img-fluid" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="offers-card-body d-flex align-items-center justify-content-between flex-wrap gap-1">
+                                                        <div class="mb-0">
+                                                            <small class="text-primary mb-2">You Pay</small>
+                                                            <p class="my-1"><span class="text-success">£</span>1000.<small>00</small></p>
+                                                        </div>
+                                                        <div class="mb-0 d-flex align-items-center">
+                                                            <img src="./assets/images/flags/flag-2.png" class="img-fluid" alt="">
+                                                            <small class="mx-2">GBP/NGN</small>
+                                                            <img src="./assets/images/flags/flag-3.png" class="img-fluid" alt="">
+                                                        </div>
+                                                        <div class="mb-0 text-end">
+                                                            <small class="text-primary mb-2">You Pay</small>
+                                                            <p class="my-1"><span class="text-success">₦</span>890,000.<small>00</small></p>
+                                                        </div>
+                                                    </div>
+                                                    <small class="text-primary">(Inc. Service charges  £10.00)</small>
+                                                </div>
+                                            </div>                                            
+                                        </div>
+                                        <div class="col-md-6 col-xl-4">
+                                            <div class="card border-0 mb-3">
+                                                <div class="card-body">
+                                                    <div class="d-flex align-items-center justify-content-between border-bottom pb-3 mb-3 flex-wrap gap-1">
+                                                        <div class="d-flex align-items-center">
+                                                            <p class="mb-0">£1</p>
+                                                            <span class="plane-icon bg-primary mx-2">
+                                                                <img src="./assets/images/icons/mini-icon/Repeat.png" class="img-fluid" alt="">
+                                                            </span>
+                                                            <p class="mb-0">₦890.00</p>
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <img src="./assets/images/icons/clock.png" class="img-fluid" alt="">
+                                                            <small class="ms-1 mb-0 text-primary">24 hrs ago</small>
+                                                            <img src="./assets/images/icons/heart.png" class=" ms-3 img-fluid" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="offers-card-body d-flex align-items-center justify-content-between flex-wrap gap-1">
+                                                        <div class="mb-0">
+                                                            <small class="text-primary mb-2">You Pay</small>
+                                                            <p class="my-1"><span class="text-success">£</span>1000.<small>00</small></p>
+                                                        </div>
+                                                        <div class="mb-0 d-flex align-items-center">
+                                                            <img src="./assets/images/flags/flag-2.png" class="img-fluid" alt="">
+                                                            <small class="mx-2">GBP/NGN</small>
+                                                            <img src="./assets/images/flags/flag-3.png" class="img-fluid" alt="">
+                                                        </div>
+                                                        <div class="mb-0 text-end">
+                                                            <small class="text-primary mb-2">You Pay</small>
+                                                            <p class="my-1"><span class="text-success">₦</span>890,000.<small>00</small></p>
+                                                        </div>
+                                                    </div>
+                                                    <small class="text-primary">(Inc. Service charges  £10.00)</small>
+                                                </div>
+                                            </div>                                            
+                                        </div>
+                                        <div class="col-md-6 col-xl-4">
+                                            <div class="card border-0 mb-3">
+                                                <div class="card-body">
+                                                    <div class="d-flex align-items-center justify-content-between border-bottom pb-3 mb-3 flex-wrap gap-1">
+                                                        <div class="d-flex align-items-center">
+                                                            <p class="mb-0">£1</p>
+                                                            <span class="plane-icon bg-primary mx-2">
+                                                                <img src="./assets/images/icons/mini-icon/Repeat.png" class="img-fluid" alt="">
+                                                            </span>
+                                                            <p class="mb-0">₦890.00</p>
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <img src="./assets/images/icons/clock.png" class="img-fluid" alt="">
+                                                            <small class="ms-1 mb-0 text-primary">24 hrs ago</small>
+                                                            <img src="./assets/images/icons/heart.png" class=" ms-3 img-fluid" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="offers-card-body d-flex align-items-center justify-content-between flex-wrap gap-1">
+                                                        <div class="mb-0">
+                                                            <small class="text-primary mb-2">You Pay</small>
+                                                            <p class="my-1"><span class="text-success">£</span>1000.<small>00</small></p>
+                                                        </div>
+                                                        <div class="mb-0 d-flex align-items-center">
+                                                            <img src="./assets/images/flags/flag-2.png" class="img-fluid" alt="">
+                                                            <small class="mx-2">GBP/NGN</small>
+                                                            <img src="./assets/images/flags/flag-3.png" class="img-fluid" alt="">
+                                                        </div>
+                                                        <div class="mb-0 text-end">
+                                                            <small class="text-primary mb-2">You Pay</small>
+                                                            <p class="my-1"><span class="text-success">₦</span>890,000.<small>00</small></p>
+                                                        </div>
+                                                    </div>
+                                                    <small class="text-primary">(Inc. Service charges  £10.00)</small>
+                                                </div>
+                                            </div>                                            
+                                        </div>
+                                        <div class="col-md-6 col-xl-4">
+                                            <div class="card border-0 mb-3">
+                                                <div class="card-body">
+                                                    <div class="d-flex align-items-center justify-content-between border-bottom pb-3 mb-3 flex-wrap gap-1">
+                                                        <div class="d-flex align-items-center">
+                                                            <p class="mb-0">£1</p>
+                                                            <span class="plane-icon bg-primary mx-2">
+                                                                <img src="./assets/images/icons/mini-icon/Repeat.png" class="img-fluid" alt="">
+                                                            </span>
+                                                            <p class="mb-0">₦890.00</p>
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <img src="./assets/images/icons/clock.png" class="img-fluid" alt="">
+                                                            <small class="ms-1 mb-0 text-primary">24 hrs ago</small>
+                                                            <img src="./assets/images/icons/heart.png" class=" ms-3 img-fluid" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="offers-card-body d-flex align-items-center justify-content-between flex-wrap gap-1">
+                                                        <div class="mb-0">
+                                                            <small class="text-primary mb-2">You Pay</small>
+                                                            <p class="my-1"><span class="text-success">£</span>1000.<small>00</small></p>
+                                                        </div>
+                                                        <div class="mb-0 d-flex align-items-center">
+                                                            <img src="./assets/images/flags/flag-2.png" class="img-fluid" alt="">
+                                                            <small class="mx-2">GBP/NGN</small>
+                                                            <img src="./assets/images/flags/flag-3.png" class="img-fluid" alt="">
+                                                        </div>
+                                                        <div class="mb-0 text-end">
+                                                            <small class="text-primary mb-2">You Pay</small>
+                                                            <p class="my-1"><span class="text-success">₦</span>890,000.<small>00</small></p>
+                                                        </div>
+                                                    </div>
+                                                    <small class="text-primary">(Inc. Service charges  £10.00)</small>
+                                                </div>
+                                            </div>                                            
+                                        </div>
+                                        <!-- cards end -->
+                                        <!-- pagination -->
+                                        <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mt-3">
+                                            <p class="text-black mb-0">Showing 1 to 10 of 57 entries</p>
+                                            <div class="pagination ms-auto d-flex justify-content-around flex-wrap" role="group" aria-label="Basic example">
+                                                <a href="#" class="btn btn-outline-primary btn-prev">Previous</a>
+                                                <a href="#" class="btn btn-outline-primary active">1</a>
+                                                <a href="#" class="btn btn-outline-primary">2</a>
+                                                <a href="#" class="btn btn-outline-primary">3</a>
+                                                <a href="#" class="btn btn-outline-primary">4</a>
+                                                <a href="#" class="btn btn-outline-primary">5</a>
+                                                <a href="#" class="btn btn-outline-primary btn-next">Next</a>
+                                              </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 🔥 Favorite  start -->
+                                <div class="tab-pane fade" id="pills-favorite" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                                    <div class="row">
+                                        <!-- cards start -->
+                                        <div class="col-md-6 col-xl-4">
+                                            <div class="card border-0 mb-3">
+                                                <div class="card-body">
+                                                    <div class="d-flex align-items-center justify-content-between border-bottom border-danger pb-3 mb-3 gap-1 flex-wrap">
+                                                        <div class="d-flex align-items-center">
+                                                            <p class="mb-0">£1</p>
+                                                            <span class="plane-icon bg-primary mx-2">
+                                                                <img src="./assets/images/icons/mini-icon/Repeat.png" class="img-fluid" alt="">
+                                                            </span>
+                                                            <p class="mb-0">₦890.00</p>
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <img src="./assets/images/icons/clock.png" class="img-fluid" alt="">
+                                                            <small class="ms-1 mb-0 text-primary">24 hrs ago</small>
+                                                            <img src="./assets/images/icons/heart-fav.png" class=" ms-3 img-fluid" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="offers-card-body d-flex align-items-center justify-content-between flex-wrap gap-1">
+                                                        <div class="mb-0">
+                                                            <small class="text-primary mb-2">You Pay</small>
+                                                            <p class="my-1"><span class="text-success">£</span>1000.<small>00</small></p>
+                                                        </div>
+                                                        <div class="mb-0 d-flex align-items-center">
+                                                            <img src="./assets/images/flags/flag-2.png" class="img-fluid" alt="">
+                                                            <small class="mx-2">GBP/NGN</small>
+                                                            <img src="./assets/images/flags/flag-3.png" class="img-fluid" alt="">
+                                                        </div>
+                                                        <div class="mb-0 text-end">
+                                                            <small class="text-primary mb-2">You Pay</small>
+                                                            <p class="my-1"><span class="text-success">₦</span>890,000.<small>00</small></p>
+                                                        </div>
+                                                    </div>
+                                                    <small class="text-primary">(Inc. Service charges  £10.00)</small>
+                                                </div>
+                                            </div>                                            
+                                        </div>
+                                        <div class="col-md-6 col-xl-4">
+                                            <div class="card border-0 mb-3">
+                                                <div class="card-body">
+                                                    <div class="d-flex align-items-center justify-content-between border-bottom border-danger pb-3 mb-3 gap-1 flex-wrap">
+                                                        <div class="d-flex align-items-center">
+                                                            <p class="mb-0">£1</p>
+                                                            <span class="plane-icon bg-primary mx-2">
+                                                                <img src="./assets/images/icons/mini-icon/Repeat.png" class="img-fluid" alt="">
+                                                            </span>
+                                                            <p class="mb-0">₦890.00</p>
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <img src="./assets/images/icons/clock.png" class="img-fluid" alt="">
+                                                            <small class="ms-1 mb-0 text-primary">24 hrs ago</small>
+                                                            <img src="./assets/images/icons/heart-fav.png" class=" ms-3 img-fluid" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="offers-card-body d-flex align-items-center justify-content-between flex-wrap gap-1">
+                                                        <div class="mb-0">
+                                                            <small class="text-primary mb-2">You Pay</small>
+                                                            <p class="my-1"><span class="text-success">£</span>1000.<small>00</small></p>
+                                                        </div>
+                                                        <div class="mb-0 d-flex align-items-center">
+                                                            <img src="./assets/images/flags/flag-2.png" class="img-fluid" alt="">
+                                                            <small class="mx-2">GBP/NGN</small>
+                                                            <img src="./assets/images/flags/flag-3.png" class="img-fluid" alt="">
+                                                        </div>
+                                                        <div class="mb-0 text-end">
+                                                            <small class="text-primary mb-2">You Pay</small>
+                                                            <p class="my-1"><span class="text-success">₦</span>890,000.<small>00</small></p>
+                                                        </div>
+                                                    </div>
+                                                    <small class="text-primary">(Inc. Service charges  £10.00)</small>
+                                                </div>
+                                            </div>                                            
+                                        </div>
+                                        <div class="col-md-6 col-xl-4">
+                                            <div class="card border-0 mb-3">
+                                                <div class="card-body">
+                                                    <div class="d-flex align-items-center justify-content-between border-bottom border-danger pb-3 mb-3 gap-1 flex-wrap">
+                                                        <div class="d-flex align-items-center">
+                                                            <p class="mb-0">£1</p>
+                                                            <span class="plane-icon bg-primary mx-2">
+                                                                <img src="./assets/images/icons/mini-icon/Repeat.png" class="img-fluid" alt="">
+                                                            </span>
+                                                            <p class="mb-0">₦890.00</p>
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <img src="./assets/images/icons/clock.png" class="img-fluid" alt="">
+                                                            <small class="ms-1 mb-0 text-primary">24 hrs ago</small>
+                                                            <img src="./assets/images/icons/heart-fav.png" class=" ms-3 img-fluid" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="offers-card-body d-flex align-items-center justify-content-between flex-wrap gap-1">
+                                                        <div class="mb-0">
+                                                            <small class="text-primary mb-2">You Pay</small>
+                                                            <p class="my-1"><span class="text-success">£</span>1000.<small>00</small></p>
+                                                        </div>
+                                                        <div class="mb-0 d-flex align-items-center">
+                                                            <img src="./assets/images/flags/flag-2.png" class="img-fluid" alt="">
+                                                            <small class="mx-2">GBP/NGN</small>
+                                                            <img src="./assets/images/flags/flag-3.png" class="img-fluid" alt="">
+                                                        </div>
+                                                        <div class="mb-0 text-end">
+                                                            <small class="text-primary mb-2">You Pay</small>
+                                                            <p class="my-1"><span class="text-success">₦</span>890,000.<small>00</small></p>
+                                                        </div>
+                                                    </div>
+                                                    <small class="text-primary">(Inc. Service charges  £10.00)</small>
+                                                </div>
+                                            </div>                                            
+                                        </div>
+                                        <div class="col-md-6 col-xl-4">
+                                            <div class="card border-0 mb-3">
+                                                <div class="card-body">
+                                                    <div class="d-flex align-items-center justify-content-between border-bottom border-danger pb-3 mb-3 gap-1 flex-wrap">
+                                                        <div class="d-flex align-items-center">
+                                                            <p class="mb-0">£1</p>
+                                                            <span class="plane-icon bg-primary mx-2">
+                                                                <img src="./assets/images/icons/mini-icon/Repeat.png" class="img-fluid" alt="">
+                                                            </span>
+                                                            <p class="mb-0">₦890.00</p>
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <img src="./assets/images/icons/clock.png" class="img-fluid" alt="">
+                                                            <small class="ms-1 mb-0 text-primary">24 hrs ago</small>
+                                                            <img src="./assets/images/icons/heart-fav.png" class=" ms-3 img-fluid" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="offers-card-body d-flex align-items-center justify-content-between flex-wrap gap-1">
+                                                        <div class="mb-0">
+                                                            <small class="text-primary mb-2">You Pay</small>
+                                                            <p class="my-1"><span class="text-success">£</span>1000.<small>00</small></p>
+                                                        </div>
+                                                        <div class="mb-0 d-flex align-items-center">
+                                                            <img src="./assets/images/flags/flag-2.png" class="img-fluid" alt="">
+                                                            <small class="mx-2">GBP/NGN</small>
+                                                            <img src="./assets/images/flags/flag-3.png" class="img-fluid" alt="">
+                                                        </div>
+                                                        <div class="mb-0 text-end">
+                                                            <small class="text-primary mb-2">You Pay</small>
+                                                            <p class="my-1"><span class="text-success">₦</span>890,000.<small>00</small></p>
+                                                        </div>
+                                                    </div>
+                                                    <small class="text-primary">(Inc. Service charges  £10.00)</small>
+                                                </div>
+                                            </div>                                            
+                                        </div>
+                                        <div class="col-md-6 col-xl-4">
+                                            <div class="card border-0 mb-3">
+                                                <div class="card-body">
+                                                    <div class="d-flex align-items-center justify-content-between border-bottom border-danger pb-3 mb-3 gap-1 flex-wrap">
+                                                        <div class="d-flex align-items-center">
+                                                            <p class="mb-0">£1</p>
+                                                            <span class="plane-icon bg-primary mx-2">
+                                                                <img src="./assets/images/icons/mini-icon/Repeat.png" class="img-fluid" alt="">
+                                                            </span>
+                                                            <p class="mb-0">₦890.00</p>
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <img src="./assets/images/icons/clock.png" class="img-fluid" alt="">
+                                                            <small class="ms-1 mb-0 text-primary">24 hrs ago</small>
+                                                            <img src="./assets/images/icons/heart-fav.png" class=" ms-3 img-fluid" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="offers-card-body d-flex align-items-center justify-content-between flex-wrap gap-1">
+                                                        <div class="mb-0">
+                                                            <small class="text-primary mb-2">You Pay</small>
+                                                            <p class="my-1"><span class="text-success">£</span>1000.<small>00</small></p>
+                                                        </div>
+                                                        <div class="mb-0 d-flex align-items-center">
+                                                            <img src="./assets/images/flags/flag-2.png" class="img-fluid" alt="">
+                                                            <small class="mx-2">GBP/NGN</small>
+                                                            <img src="./assets/images/flags/flag-3.png" class="img-fluid" alt="">
+                                                        </div>
+                                                        <div class="mb-0 text-end">
+                                                            <small class="text-primary mb-2">You Pay</small>
+                                                            <p class="my-1"><span class="text-success">₦</span>890,000.<small>00</small></p>
+                                                        </div>
+                                                    </div>
+                                                    <small class="text-primary">(Inc. Service charges  £10.00)</small>
+                                                </div>
+                                            </div>                                            
+                                        </div>
+                                        <div class="col-md-6 col-xl-4">
+                                            <div class="card border-0 mb-3">
+                                                <div class="card-body">
+                                                    <div class="d-flex align-items-center justify-content-between border-bottom border-danger pb-3 mb-3 gap-1 flex-wrap">
+                                                        <div class="d-flex align-items-center">
+                                                            <p class="mb-0">£1</p>
+                                                            <span class="plane-icon bg-primary mx-2">
+                                                                <img src="./assets/images/icons/mini-icon/Repeat.png" class="img-fluid" alt="">
+                                                            </span>
+                                                            <p class="mb-0">₦890.00</p>
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <img src="./assets/images/icons/clock.png" class="img-fluid" alt="">
+                                                            <small class="ms-1 mb-0 text-primary">24 hrs ago</small>
+                                                            <img src="./assets/images/icons/heart-fav.png" class=" ms-3 img-fluid" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="offers-card-body d-flex align-items-center justify-content-between flex-wrap gap-1">
+                                                        <div class="mb-0">
+                                                            <small class="text-primary mb-2">You Pay</small>
+                                                            <p class="my-1"><span class="text-success">£</span>1000.<small>00</small></p>
+                                                        </div>
+                                                        <div class="mb-0 d-flex align-items-center">
+                                                            <img src="./assets/images/flags/flag-2.png" class="img-fluid" alt="">
+                                                            <small class="mx-2">GBP/NGN</small>
+                                                            <img src="./assets/images/flags/flag-3.png" class="img-fluid" alt="">
+                                                        </div>
+                                                        <div class="mb-0 text-end">
+                                                            <small class="text-primary mb-2">You Pay</small>
+                                                            <p class="my-1"><span class="text-success">₦</span>890,000.<small>00</small></p>
+                                                        </div>
+                                                    </div>
+                                                    <small class="text-primary">(Inc. Service charges  £10.00)</small>
+                                                </div>
+                                            </div>                                            
+                                        </div>
+                                        <!-- cards end -->
+                                        <!-- pagination -->
+                                        <div class="d-flex justify-content-between align-items-center flex-wrap">
+                                            <p class="text-black mb-0">Showing 1 to 10 of 57 entries</p>
+                                            <div class="pagination ms-auto d-flex justify-content-around flex-wrap" role="group" aria-label="Basic example">
+                                                <a href="#" class="btn btn-outline-primary btn-prev">Previous</a>
+                                                <a href="#" class="btn btn-outline-primary active">1</a>
+                                                <a href="#" class="btn btn-outline-primary">2</a>
+                                                <a href="#" class="btn btn-outline-primary">3</a>
+                                                <a href="#" class="btn btn-outline-primary">4</a>
+                                                <a href="#" class="btn btn-outline-primary">5</a>
+                                                <a href="#" class="btn btn-outline-primary btn-next">Next</a>
+                                              </div>
+                                        </div>
+                                    </div>   
+                                </div>
+
+                                <!-- Rate Table start -->
+                                <div class="tab-pane fade" id="pills-my-offers" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                                    <div class="row">
+                                        <!-- cards start -->
+                                        <div class="col-md-6 col-xl-4">
+                                            <div class="card border-0 mb-3">
+                                                <div class="card-body">
+                                                    <div class="d-flex align-items-center justify-content-between border-bottom border-danger pb-3 mb-3 gap-1 flex-wrap">
+                                                        <div class="d-flex align-items-center">
+                                                            <p class="mb-0">£1</p>
+                                                            <span class="plane-icon bg-primary mx-2">
+                                                                <img src="./assets/images/icons/mini-icon/Repeat.png" class="img-fluid" alt="">
+                                                            </span>
+                                                            <p class="mb-0">₦890.00</p>
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <img src="./assets/images/icons/clock.png" class="img-fluid" alt="">
+                                                            <small class="ms-1 mb-0 text-primary">24 hrs ago</small>
+                                                            <img src="./assets/images/icons/heart-fav.png" class=" ms-3 img-fluid" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="offers-card-body d-flex align-items-center justify-content-between flex-wrap gap-1">
+                                                        <div class="mb-0">
+                                                            <small class="text-primary mb-2">You Pay</small>
+                                                            <p class="my-1"><span class="text-success">£</span>1000.<small>00</small></p>
+                                                        </div>
+                                                        <div class="mb-0 d-flex align-items-center">
+                                                            <img src="./assets/images/flags/flag-2.png" class="img-fluid" alt="">
+                                                            <small class="mx-2">GBP/NGN</small>
+                                                            <img src="./assets/images/flags/flag-3.png" class="img-fluid" alt="">
+                                                        </div>
+                                                        <div class="mb-0 text-end">
+                                                            <small class="text-primary mb-2">You Pay</small>
+                                                            <p class="my-1"><span class="text-success">₦</span>890,000.<small>00</small></p>
+                                                        </div>
+                                                    </div>
+                                                    <small class="text-primary">(Inc. Service charges  £10.00)</small>
+                                                </div>
+                                            </div>                                            
+                                        </div>
+                                        <!-- cards end -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <!-- body end -->
+                </div>
+            </div> 
+
+        </div>
+    </div>
+
+          <!-- Script -->
+    <script src="./assets/js/bootstrap.bundle.js"></script>
+
+    <script>
+        var el = document.getElementById("dashboard-wrapper")
+        var toggleButton = document.getElementById("menu-toggle")
+
+        toggleButton.onclick = function(){
+            el.classList.toggle("toggled")
+        }
+    </script>
+</body>
+</html>

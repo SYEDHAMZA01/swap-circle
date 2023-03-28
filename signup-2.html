@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./assets/plugin/select-flag/css/intlTelInput.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+        <div id="signup">
+            <div class="container py-100">
+                <div class="row">
+                    <div class="col-12 text-center mb-2">
+                        <h3 class="main-heading mb-3">Welcome..!</h3>
+                        <img src="./assets/images/logo176X72.png" class="img-fluid mb-3" alt="logo">
+                        <p class="sub-heading">Create your Swap Circle account.</p>
+                    </div>
+                </div>
+                <form action="">
+                    <div class="row px-3">
+                        <div class="col-md-4 col-sm-12 mb-3">
+                            <div class="form-group position-relative">
+                                <span class="input-icon"><img src="./assets/images/icons/company.png" alt="icon" class="img-fluid"></span>
+                                <input type="text" class="form-control" placeholder="Company Name" aria-label="Company Name" id="company-name" name="company-name">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12 mb-3">
+                            <div class="form-group position-relative">
+                                <span class="input-icon"><img src="./assets/images/icons/profile-1.png" alt="icon" class="img-fluid"></span>
+                                <input type="text" class="form-control" placeholder="Representative name" aria-label="Representative name" id="representative-name" name="representative-name">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12 mb-3">
+                            <div class="form-group position-relative">
+                                <span class="input-icon"><img src="./assets/images/icons/email.png" alt="icon" class="img-fluid"></span>
+                                <input type="email" class="form-control" placeholder="Email" aria-label="Email" id="email" name="email">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12 mb-3">
+                            <div class="form-group position-relative">
+                                <input type="tel" class="form-control w-100" placeholder="Phone number" aria-label="Phone number" id="telephone" name="telephone">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12 mb-3">
+                            <div class="form-group position-relative w-pass">
+                                <span class="input-icon"><img src="./assets/images/icons/lock.png" alt="icon" class="img-fluid"></span>
+                                <input type="password" class="form-control" placeholder="Create password" aria-label="Create password" id="create-pass" name="create-pass">
+                                <span class="input-icon right"><img src="./assets/images/icons/Eye-slash 1.png" alt="icon" class="img-fluid"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12 mb-3">
+                            <div class="form-group position-relative w-pass">
+                                <span class="input-icon"><img src="./assets/images/icons/lock.png" alt="icon" class="img-fluid"></span>
+                                <input type="password" class="form-control" placeholder="Confirm password" aria-label="Confirm password" id="confirm-pass" name="confirm-pass">
+                                <span class="input-icon right"><img src="./assets/images/icons/Eye-slash 1.png" alt="icon" class="img-fluid"></span>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-5">
+                            <div class="form-group position-relative">
+                                <span class="input-icon"><span class="input-icon"><img src="./assets/images/icons/location.png" alt="icon" class="img-fluid"></span></span>
+                                <input type="text" class="form-control" placeholder="2972 Westheimer Rd. Santa Ana, Illinois." aria-label="location" id="location" name="location">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <h3 class="title text-success">Upload</h3>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-3">
+                            <p class="sub-heading">Government issued ID for User Validation</p>
+                            <ul class="list-unstyled">
+                                <li><span class="text-danger" >*</span>Acceptable IDs will be</li>
+                                <li>1- Drivers License</li>
+                                <li>2- Passport</li>
+                                <li>3- National Identity Card</li>
+                                <li>4- Voters Card</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-3">
+                            <div class="control-group file-upload" id="file-upload1">
+                                <div class="image-box text-center mx-auto">
+                                    <!-- <p>Upload Image</p> -->
+                                    <img src="./assets/images/icons/document-upload.png" class="img-fluid" alt="">
+                                </div>
+                                <div class="controls" style="display: none;">
+                                    <input type="file" name="contact_image_1" multiple/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12 mb-5">
+                            <div class="form-group position-relative">
+                                <span class="input-icon"><img src="./assets/images/icons/Expiry Date.png" alt="icon" class="img-fluid"></span>
+                                <input type="text" class="form-control mb-3" placeholder="Enter Expiry date of ID" aria-label="location" id="location" name="location">
+                                <small class="text-primary"><span class="text-danger" >*</span>After expiration of current id, re-verification process  will need.</small>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 mx-auto mt-5">
+                            <!-- <button type="button" class="btn btn-login btn-primary w-100">Next</button> -->
+                            <a href="./signup-verified.html" class="btn btn-login btn-primary w-100">Next</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+
+        <!-- Script -->
+        <script src="./assets/js/bootstrap.bundle.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <script src="./assets/plugin/select-flag/js/intlTelInput-jquery.js"></script>
+        <script src="./assets/js/file-upload/index.js"></script>
+
+        <script>
+                $("#telephone").intlTelInput({
+                    initialCountry: 'auto',
+                    geoIpLookup: function(success, failure) {
+                        $.get("https://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+                            var countryCode = (resp && resp.country) ? resp.country : "";
+                            success(countryCode);
+                        });
+                    },
+                    utilsScript: './assets/plugin/select-flag/js/utils.js'
+                });
+        </script>
+</body>
+</html>

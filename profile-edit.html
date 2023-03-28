@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./assets/css/navbar.css">
+    <link href="./assets/css/style.css" rel="stylesheet" type="text/css" >
+</head>
+<body>
+    <div class="d-flex" id="dashboard-wrapper">
+
+        <!-- Side-Navbar Start-->
+
+        <div class="bg-white" id="sidebar-wrapper">
+
+            <div class="sidebar-logo text-center p-4">
+                <img src="./assets/images/logo176X72.png" alt="image" class="img-fluid">
+            </div>
+
+            <div class="list-group list-grop-flush ">
+                <a href="./home.html" class="list-group-item list-group-item-action">
+                    <img src="./assets/images/icons/home.png" class="img-fluid me-4" alt="icon"> Home
+                </a>
+                <a href="./data-analysis.html" class="list-group-item list-group-item-action">
+                    <img src="./assets/images/icons/analytics.png" class="img-fluid me-4" alt="icon">Data Analysis
+                </a>
+                <a href="./offers.html" class="list-group-item list-group-item-action">
+                    <img src="./assets/images/icons/activity.png" class="img-fluid me-4" alt="icon">Offers
+                </a>
+                <a href="./track.html" class="list-group-item list-group-item-action">
+                    <img src="./assets/images/icons/send-2.png" class="img-fluid me-4" alt="icon">Track
+                </a>
+                <a href="./connects.html" class="list-group-item list-group-item-action">
+                    <img src="./assets/images/icons/Connect.png" class="img-fluid me-4" alt="icon">Connect
+                </a>
+                <a href="./profile.html" class="list-group-item list-group-item-action active">
+                    <img src="./assets/images/icons/Profile.png" class="img-fluid me-4" alt="icon">Profile
+                </a>
+                <a href="./message.html" class="list-group-item list-group-item-action">
+                    <img src="./assets/images/icons/mark_chat_unread.png" class="img-fluid me-4" alt="icon">Message
+                </a>
+            </div>
+
+        </div>
+
+        <!-- Side-Navbar End-->
+        <!-- navbar start -->
+        <div class="top-bar">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 py-3">
+                <div class="d-flex align-items-center">
+                    <!-- <i class="fas fa-align-left me-3 fs-4 primary-text">@</i> -->
+                    <img src="./assets/images/icons/div.png" alt="" class="img-fluid me-3"  id="menu-toggle">
+                    <h3 class="fw-bolder m-0">Dashboard</h3>
+                </div>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center flex-row">
+                    <li class="nav-item dropdown me-3 me-sm-5">
+                        <a href="#" class="nav-link d-flex align-items-center" role="button" id="navbarDropdown1" data-bs-toggle="dropdown" aria-expanded="false">
+                           <img src="./assets/images/icons/notification.png" class="img-fluid" alt="" srcset="">
+                           <span class="position-absolute top-0 start-100 translate-middle badge rounded-full bg-primary text-white">
+                            12
+                            <span class="visually-hidden">unread Notification</span>
+                          </span>
+                        </a>
+
+                        <ul class="dropdown-menu position-absolute  mt-3 dropdown-menu-end py-0" aria-labelledby="navbarDropdown2">
+                            <h6 class="dropdown-item-text font-15 m-0 py-3 border-bottom d-flex justify-content-between align-items-center">
+                                Notifications <span class="badge bg-soft-primary badge-pill">2</span>
+                            </h6>
+                            <div class="notification-menu">
+                                <!-- item-->
+                                <a href="#" class="dropdown-item py-3">
+                                    <small class="float-end text-muted ps-2">2 min ago</small>
+                                    <div class="media d-flex">
+                                        <div class="media-body align-self-center ms-2 text-truncate">
+                                            <h6 class="my-0 fw-normal text-dark">Your order is placed</h6>
+                                            <small class="text-muted mb-0">Dummy text of the printing and
+                                                industry.</small>
+                                        </div>
+                                        <!--end media-body-->
+                                    </div>
+                                    <!--end media-->
+                                </a>
+                                <!--end-item-->
+                                <!-- item-->
+                                <a href="#" class="dropdown-item py-3">
+                                    <small class="float-end text-muted ps-2">10 min ago</small>
+                                    <div class="media d-flex">
+                                        <div class="media-body align-self-center ms-2 text-truncate">
+                                            <h6 class="my-0 fw-normal text-dark">Meeting with designers</h6>
+                                            <small class="text-muted mb-0">It is a long established fact that a
+                                                reader.</small>
+                                        </div>
+                                        <!--end media-body-->
+                                    </div>
+                                    <!--end media-->
+                                </a>
+                                <!--end-item-->
+                                <!-- item-->
+                                <a href="#" class="dropdown-item py-3">
+                                    <small class="float-end text-muted ps-2">40 min ago</small>
+                                    <div class="media d-flex">
+                                        <div class="media-body align-self-center ms-2 text-truncate">
+                                            <h6 class="my-0 fw-normal text-dark">UX 3 Task complete.</h6>
+                                            <small class="text-muted mb-0">Dummy text of the printing.</small>
+                                        </div>
+                                        <!--end media-body-->
+                                    </div>
+                                    <!--end media-->
+                                </a>
+                                <!--end-item-->
+                                <!-- item-->
+                                <a href="#" class="dropdown-item py-3">
+                                    <small class="float-end text-muted ps-2">1 hr ago</small>
+                                    <div class="media d-flex">
+                                        <div class="media-body align-self-center ms-2 text-truncate">
+                                            <h6 class="my-0 fw-normal text-dark">Your order is placed</h6>
+                                            <small class="text-muted mb-0">It is a long established fact that a
+                                                reader.</small>
+                                        </div>
+                                        <!--end media-body-->
+                                    </div>
+                                    <!--end media-->
+                                </a>
+                                <!--end-item-->
+                                <!-- item-->
+                                <a href="#" class="dropdown-item py-3">
+                                    <small class="float-end text-muted ps-2">2 hrs ago</small>
+                                    <div class="media d-flex">
+                                        <div class="avatar-md bg-soft-primary">
+                                            <i class="ti ti-users"></i>
+                                        </div>
+                                        <div class="media-body align-self-center ms-2 text-truncate">
+                                            <h6 class="my-0 fw-normal text-dark">Payment Successfull</h6>
+                                            <small class="text-muted mb-0">Dummy text of the printing.</small>
+                                        </div>
+                                        <!--end media-body-->
+                                    </div>
+                                    <!--end media-->
+                                </a>
+                                <!--end-item-->
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown me-3 me-sm-5">
+                        <a href="#" class="nav-link d-flex align-items-center" role="button" id="navbarDropdown2" data-bs-toggle="dropdown" aria-expanded="false">
+                           <img src="./assets/images/icons/messages-2.png" class="img-fluid" alt="" srcset="">
+                           <span class="position-absolute top-0 start-100 translate-middle badge rounded-full bg-primary text-white">
+                            5
+                            <span class="visually-hidden">unread messages</span>
+                          </span>
+                        </a>
+
+                        <ul class="dropdown-menu position-absolute  mt-3 dropdown-menu-end py-0" aria-labelledby="navbarDropdown2">
+                            <h6 class="dropdown-item-text font-15 m-0 py-3 border-bottom d-flex justify-content-between align-items-center">
+                                Messenges <span class="badge bg-soft-primary badge-pill">2</span>
+                            </h6>
+                            <div class="notification-menu">
+                                <!-- item-->
+                                <a href="#" class="dropdown-item py-3">
+                                    <small class="float-end text-muted ps-2">2 min ago</small>
+                                    <div class="media d-flex">
+                                        <div class="media-body align-self-center ms-2 text-truncate">
+                                            <h6 class="my-0 fw-normal text-dark">Your order is placed</h6>
+                                            <small class="text-muted mb-0">Dummy text of the printing and
+                                                industry.</small>
+                                        </div>
+                                        <!--end media-body-->
+                                    </div>
+                                    <!--end media-->
+                                </a>
+                                <!--end-item-->
+                                <!-- item-->
+                                <a href="#" class="dropdown-item py-3">
+                                    <small class="float-end text-muted ps-2">10 min ago</small>
+                                    <div class="media d-flex">
+                                        <div class="media-body align-self-center ms-2 text-truncate">
+                                            <h6 class="my-0 fw-normal text-dark">Meeting with designers</h6>
+                                            <small class="text-muted mb-0">It is a long established fact that a
+                                                reader.</small>
+                                        </div>
+                                        <!--end media-body-->
+                                    </div>
+                                    <!--end media-->
+                                </a>
+                                <!--end-item-->
+                                <!-- item-->
+                                <a href="#" class="dropdown-item py-3">
+                                    <small class="float-end text-muted ps-2">40 min ago</small>
+                                    <div class="media d-flex">
+                                        <div class="media-body align-self-center ms-2 text-truncate">
+                                            <h6 class="my-0 fw-normal text-dark">UX 3 Task complete.</h6>
+                                            <small class="text-muted mb-0">Dummy text of the printing.</small>
+                                        </div>
+                                        <!--end media-body-->
+                                    </div>
+                                    <!--end media-->
+                                </a>
+                                <!--end-item-->
+                                <!-- item-->
+                                <a href="#" class="dropdown-item py-3">
+                                    <small class="float-end text-muted ps-2">1 hr ago</small>
+                                    <div class="media d-flex">
+                                        <div class="media-body align-self-center ms-2 text-truncate">
+                                            <h6 class="my-0 fw-normal text-dark">Your order is placed</h6>
+                                            <small class="text-muted mb-0">It is a long established fact that a
+                                                reader.</small>
+                                        </div>
+                                        <!--end media-body-->
+                                    </div>
+                                    <!--end media-->
+                                </a>
+                                <!--end-item-->
+                                <!-- item-->
+                                <a href="#" class="dropdown-item py-3">
+                                    <small class="float-end text-muted ps-2">2 hrs ago</small>
+                                    <div class="media d-flex">
+                                        <div class="avatar-md bg-soft-primary">
+                                            <i class="ti ti-users"></i>
+                                        </div>
+                                        <div class="media-body align-self-center ms-2 text-truncate">
+                                            <h6 class="my-0 fw-normal text-dark">Payment Successfull</h6>
+                                            <small class="text-muted mb-0">Dummy text of the printing.</small>
+                                        </div>
+                                        <!--end media-body-->
+                                    </div>
+                                    <!--end media-->
+                                </a>
+                                <!--end-item-->
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a href="#" class="nav-link d-flex align-items-center" role="button" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                           <div class="me-4 d-none d-lg-block">
+                            <h5 class="sub-heading text-black mb-1 fw-bolder">Hi, Jerome Bell</h5>
+                            <span>Hello</span>
+                           </div> <img src="./assets/images/17.jpg.png" class="img-fluid" alt="" srcset="">
+                        </a>
+
+                        <ul class="dropdown-menu position-absolute  dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <li class=""><a href="./login.html" class="dropdown-item d-flex  align-items-center">
+                                <?xml version="1.0" ?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                                   <svg width="28px" height="28px" viewBox="0 0 1000 1000" data-name="Layer 2" id="Layer_2" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:none;stroke:#020202;stroke-linecap:round;stroke-miterlimit:10;stroke-width:22px;}.cls-2{fill:#020202;}</style></defs><path class="cls-1" d="M591.61,280.48C693.9,317.86,766.91,416,766.91,531.26c0,147.41-119.5,266.91-266.91,266.91S233.09,678.67,233.09,531.26c0-115.22,73-213.4,175.3-250.78"/><rect class="cls-2" height="160.61" rx="35.92" width="71.84" x="464.08" y="201.83"/></svg>
+                                <span class=" d-inline-block">Logout</span>
+                            </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- navbar end -->
+
+            <!-- content -->
+        <div class="page-content-wrapper">
+            <div class="page-content-tab">
+                <div class="container-fluid px-4 pb-4">
+                    <!-- body start -->
+                    <div class="profile-edit">
+                      <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb d-flex align-items-center">
+                            <li class="breadcrumb-item"><a href="./profile.html" class="text-primary">Profile</a></li>
+                            <li class="mx-3  d-flex align-items-center">
+                                <svg width="5" height="10" viewBox="0 0 5 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.21749 3.11406C5.22417 4.12074 5.25773 5.73205 4.31816 6.77904L4.21749 6.88529L1.47119 9.47108C1.21084 9.73143 0.788734 9.73143 0.528385 9.47108C0.288062 9.23076 0.269576 8.8526 0.472926 8.59107L0.528385 8.52827L3.27468 5.94248C3.76797 5.44919 3.79393 4.66553 3.35257 4.14168L3.27468 4.05687L0.528385 1.47108C0.268035 1.21073 0.268035 0.78862 0.528385 0.52827C0.768707 0.287947 1.14686 0.269461 1.40839 0.472811L1.47119 0.52827L4.21749 3.11406Z" fill="#21333B"/>
+                                </svg>
+                                </li>
+                            <li class="breadcrumb-item active" aria-current="page"><a href="./profile-edit.html">Profile Edit</a></li> 
+                        </ol>
+                      </nav>
+                      <!-- form -->
+                      <!-- profile Edit -->
+                      <form action="">
+                        <div class="row mt-5">
+                            <div class="col-xl-3 col-md-5">
+                                <label for="" class="sub-heading text-black mb-5 fw-bolder">Update profile image</label>
+                                <div class="control-group file-upload" id="file-upload1">
+                                    <div class="edit-image-box text-center position-relative  d-flex align-items-center">
+                                        <img src="./assets/images/profile.png" class="img-fluid" alt="">
+                                        <span class="upload-image position-absolute badge rounded-full">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <mask id="mask0_500_8881" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                                                <rect width="24" height="24" fill="#D9D9D9"/>
+                                                </mask>
+                                                <g mask="url(#mask0_500_8881)">
+                                                <path d="M5 21C4.45 21 3.979 20.8043 3.587 20.413C3.19567 20.021 3 19.55 3 19V5C3 4.45 3.19567 3.979 3.587 3.587C3.979 3.19567 4.45 3 5 3H14V5H5V19H19V10H21V19C21 19.55 20.8043 20.021 20.413 20.413C20.021 20.8043 19.55 21 19 21H5ZM17 9V7H15V5H17V3H19V5H21V7H19V9H17ZM6 17H18L14.25 12L11.25 16L9 13L6 17Z" fill="#4BD16F"/>
+                                                </g>
+                                            </svg>                                                
+                                            <span class="visually-hidden">unread messages</span>
+                                          </span>
+                                    </div>
+                                    <div class="controls" style="display: none;">
+                                        <input type="file" name="contact_image_1" value="./assets/images/profile.png"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-7 mt-5 mt-md-0">
+                                <label for="" class="sub-heading text-black mb-5 fw-bolder">Update profile image</label>
+                                <div class="form-group position-relative w-pass mb-3">
+                                    <span class="input-icon"><img src="./assets/images/icons/lock.png" alt="icon" class="img-fluid"></span>
+                                    <input type="password" class="form-control" placeholder="Old password" aria-label="old-password" id="old-pass" name="old-pass">
+                                    <span class="input-icon right"><img src="./assets/images/icons/Eye-slash 1.png" alt="icon" class="img-fluid"></span>
+                                </div>
+                                <div class="form-group position-relative w-pass mb-3">
+                                    <span class="input-icon"><img src="./assets/images/icons/lock.png" alt="icon" class="img-fluid"></span>
+                                    <input type="password" class="form-control" placeholder="New password" aria-label="new-password" id="new-pass" name="new-pass">
+                                    <span class="input-icon right"><img src="./assets/images/icons/Eye-slash 1.png" alt="icon" class="img-fluid"></span>
+                                </div>
+                                <div class="form-group position-relative w-pass mb-3">
+                                    <span class="input-icon"><img src="./assets/images/icons/lock.png" alt="icon" class="img-fluid"></span>
+                                    <input type="password" class="form-control" placeholder="Confirm password" aria-label="confirm-password" id="confirm-pass" name="confirm-pass">
+                                    <span class="input-icon right"><img src="./assets/images/icons/Eye-slash 1.png" alt="icon" class="img-fluid"></span>
+                                </div>
+                            </div>
+                            <div class="col-xl-5"></div>
+                            <div class="col-xl-3 col-md-5 d-grid mt-5">
+                                <button type="button" class="btn btn-primary py-3 rounded-4 d-block">Save</button>
+                            </div>
+                            <!-- <div class="d-grid gap-2 col-6 me-auto">
+                                <button class="btn btn-primary" type="button">Button</button>
+                                <button class="btn btn-primary" type="button">Button</button>
+                              </div> -->
+                        </div>
+                    </form>
+                    </div> 
+                    <!-- body end -->
+                </div>
+            </div> 
+
+        </div>
+    </div>
+
+          <!-- Script -->
+    <script src="./assets/js/bootstrap.bundle.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/file-upload/index.js"></script>
+
+    <script>
+        var el = document.getElementById("dashboard-wrapper")
+        var toggleButton = document.getElementById("menu-toggle")
+
+        toggleButton.onclick = function(){
+            el.classList.toggle("toggled")
+        }
+    </script>
+
+    <script>
+        $(".edit-image-box").click(function(event) {
+	var previewImg = $(this).children("img");
+
+	$(this)
+		.siblings()
+		.children("input")
+		.trigger("click");
+
+	$(this)
+		.siblings()
+		.children("input")
+		.change(function() {
+			var reader = new FileReader();
+
+			reader.onload = function(e) {
+				var urll = e.target.result;
+				$(previewImg).attr("src", urll);
+				$(previewImg).attr("class", "image");
+				previewImg.parent().css("background", "transparent");
+				previewImg.show();
+				previewImg.siblings("p").hide();
+			};
+			reader.readAsDataURL(this.files[0]);
+		});
+});
+
+    </script>
+</body>
+</html>

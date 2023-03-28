@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./assets/css/navbar.css">
+    <link href="./assets/css/style.css" rel="stylesheet" type="text/css" >
+</head>
+<body>
+    <div class="d-flex" id="dashboard-wrapper">
+
+        <!-- Side-Navbar Start-->
+
+        <div class="bg-white" id="sidebar-wrapper">
+
+            <div class="sidebar-logo text-center p-4">
+                <img src="./assets/images/logo176X72.png" alt="image" class="img-fluid">
+            </div>
+
+            <div class="list-group list-grop-flush ">
+                <a href="./home.html" class="list-group-item list-group-item-action">
+                    <img src="./assets/images/icons/home.png" class="img-fluid me-4" alt="icon"> Home
+                </a>
+                <a href="./data-analysis.html" class="list-group-item list-group-item-action">
+                    <img src="./assets/images/icons/analytics.png" class="img-fluid me-4" alt="icon">Data Analysis
+                </a>
+                <a href="./offers.html" class="list-group-item list-group-item-action">
+                    <img src="./assets/images/icons/activity.png" class="img-fluid me-4" alt="icon">Offers
+                </a>
+                <a href="./track.html" class="list-group-item list-group-item-action">
+                    <img src="./assets/images/icons/send-2.png" class="img-fluid me-4" alt="icon">Track
+                </a>
+                <a href="./connects.html" class="list-group-item list-group-item-action">
+                    <img src="./assets/images/icons/Connect.png" class="img-fluid me-4" alt="icon">Connect
+                </a>
+                <a href="./profile.html" class="list-group-item list-group-item-action">
+                    <img src="./assets/images/icons/Profile.png" class="img-fluid me-4" alt="icon">Profile
+                </a>
+                <a href="./message.html" class="list-group-item list-group-item-action  active">
+                    <img src="./assets/images/icons/mark_chat_unread.png" class="img-fluid me-4" alt="icon">Message
+                </a>
+            </div>
+
+        </div>
+
+        <!-- Side-Navbar End-->
+        <!-- navbar start -->
+        <div class="top-bar">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 py-3">
+                <div class="d-flex align-items-center">
+                    <!-- <i class="fas fa-align-left me-3 fs-4 primary-text">@</i> -->
+                    <img src="./assets/images/icons/div.png" alt="" class="img-fluid me-3"  id="menu-toggle">
+                    <h3 class="fw-bolder m-0">Dashboard</h3>
+                </div>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center flex-row">
+                    <li class="nav-item dropdown me-3 me-sm-5">
+                        <a href="#" class="nav-link d-flex align-items-center" role="button" id="navbarDropdown1" data-bs-toggle="dropdown" aria-expanded="false">
+                           <img src="./assets/images/icons/notification.png" class="img-fluid" alt="" srcset="">
+                           <span class="position-absolute top-0 start-100 translate-middle badge rounded-full bg-primary text-white">
+                            12
+                            <span class="visually-hidden">unread Notification</span>
+                          </span>
+                        </a>
+
+                        <ul class="dropdown-menu position-absolute  mt-3 dropdown-menu-end py-0" aria-labelledby="navbarDropdown2">
+                            <h6 class="dropdown-item-text font-15 m-0 py-3 border-bottom d-flex justify-content-between align-items-center">
+                                Notifications <span class="badge bg-soft-primary badge-pill">2</span>
+                            </h6>
+                            <div class="notification-menu">
+                                <!-- item-->
+                                <a href="#" class="dropdown-item py-3">
+                                    <small class="float-end text-muted ps-2">2 min ago</small>
+                                    <div class="media d-flex">
+                                        <div class="media-body align-self-center ms-2 text-truncate">
+                                            <h6 class="my-0 fw-normal text-dark">Your order is placed</h6>
+                                            <small class="text-muted mb-0">Dummy text of the printing and
+                                                industry.</small>
+                                        </div>
+                                        <!--end media-body-->
+                                    </div>
+                                    <!--end media-->
+                                </a>
+                                <!--end-item-->
+                                <!-- item-->
+                                <a href="#" class="dropdown-item py-3">
+                                    <small class="float-end text-muted ps-2">10 min ago</small>
+                                    <div class="media d-flex">
+                                        <div class="media-body align-self-center ms-2 text-truncate">
+                                            <h6 class="my-0 fw-normal text-dark">Meeting with designers</h6>
+                                            <small class="text-muted mb-0">It is a long established fact that a
+                                                reader.</small>
+                                        </div>
+                                        <!--end media-body-->
+                                    </div>
+                                    <!--end media-->
+                                </a>
+                                <!--end-item-->
+                                <!-- item-->
+                                <a href="#" class="dropdown-item py-3">
+                                    <small class="float-end text-muted ps-2">40 min ago</small>
+                                    <div class="media d-flex">
+                                        <div class="media-body align-self-center ms-2 text-truncate">
+                                            <h6 class="my-0 fw-normal text-dark">UX 3 Task complete.</h6>
+                                            <small class="text-muted mb-0">Dummy text of the printing.</small>
+                                        </div>
+                                        <!--end media-body-->
+                                    </div>
+                                    <!--end media-->
+                                </a>
+                                <!--end-item-->
+                                <!-- item-->
+                                <a href="#" class="dropdown-item py-3">
+                                    <small class="float-end text-muted ps-2">1 hr ago</small>
+                                    <div class="media d-flex">
+                                        <div class="media-body align-self-center ms-2 text-truncate">
+                                            <h6 class="my-0 fw-normal text-dark">Your order is placed</h6>
+                                            <small class="text-muted mb-0">It is a long established fact that a
+                                                reader.</small>
+                                        </div>
+                                        <!--end media-body-->
+                                    </div>
+                                    <!--end media-->
+                                </a>
+                                <!--end-item-->
+                                <!-- item-->
+                                <a href="#" class="dropdown-item py-3">
+                                    <small class="float-end text-muted ps-2">2 hrs ago</small>
+                                    <div class="media d-flex">
+                                        <div class="avatar-md bg-soft-primary">
+                                            <i class="ti ti-users"></i>
+                                        </div>
+                                        <div class="media-body align-self-center ms-2 text-truncate">
+                                            <h6 class="my-0 fw-normal text-dark">Payment Successfull</h6>
+                                            <small class="text-muted mb-0">Dummy text of the printing.</small>
+                                        </div>
+                                        <!--end media-body-->
+                                    </div>
+                                    <!--end media-->
+                                </a>
+                                <!--end-item-->
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown me-3 me-sm-5">
+                        <a href="#" class="nav-link d-flex align-items-center" role="button" id="navbarDropdown2" data-bs-toggle="dropdown" aria-expanded="false">
+                           <img src="./assets/images/icons/messages-2.png" class="img-fluid" alt="" srcset="">
+                           <span class="position-absolute top-0 start-100 translate-middle badge rounded-full bg-primary text-white">
+                            5
+                            <span class="visually-hidden">unread messages</span>
+                          </span>
+                        </a>
+
+                        <ul class="dropdown-menu position-absolute  mt-3 dropdown-menu-end py-0" aria-labelledby="navbarDropdown2">
+                            <h6 class="dropdown-item-text font-15 m-0 py-3 border-bottom d-flex justify-content-between align-items-center">
+                                Messenges <span class="badge bg-soft-primary badge-pill">2</span>
+                            </h6>
+                            <div class="notification-menu">
+                                <!-- item-->
+                                <a href="#" class="dropdown-item py-3">
+                                    <small class="float-end text-muted ps-2">2 min ago</small>
+                                    <div class="media d-flex">
+                                        <div class="media-body align-self-center ms-2 text-truncate">
+                                            <h6 class="my-0 fw-normal text-dark">Your order is placed</h6>
+                                            <small class="text-muted mb-0">Dummy text of the printing and
+                                                industry.</small>
+                                        </div>
+                                        <!--end media-body-->
+                                    </div>
+                                    <!--end media-->
+                                </a>
+                                <!--end-item-->
+                                <!-- item-->
+                                <a href="#" class="dropdown-item py-3">
+                                    <small class="float-end text-muted ps-2">10 min ago</small>
+                                    <div class="media d-flex">
+                                        <div class="media-body align-self-center ms-2 text-truncate">
+                                            <h6 class="my-0 fw-normal text-dark">Meeting with designers</h6>
+                                            <small class="text-muted mb-0">It is a long established fact that a
+                                                reader.</small>
+                                        </div>
+                                        <!--end media-body-->
+                                    </div>
+                                    <!--end media-->
+                                </a>
+                                <!--end-item-->
+                                <!-- item-->
+                                <a href="#" class="dropdown-item py-3">
+                                    <small class="float-end text-muted ps-2">40 min ago</small>
+                                    <div class="media d-flex">
+                                        <div class="media-body align-self-center ms-2 text-truncate">
+                                            <h6 class="my-0 fw-normal text-dark">UX 3 Task complete.</h6>
+                                            <small class="text-muted mb-0">Dummy text of the printing.</small>
+                                        </div>
+                                        <!--end media-body-->
+                                    </div>
+                                    <!--end media-->
+                                </a>
+                                <!--end-item-->
+                                <!-- item-->
+                                <a href="#" class="dropdown-item py-3">
+                                    <small class="float-end text-muted ps-2">1 hr ago</small>
+                                    <div class="media d-flex">
+                                        <div class="media-body align-self-center ms-2 text-truncate">
+                                            <h6 class="my-0 fw-normal text-dark">Your order is placed</h6>
+                                            <small class="text-muted mb-0">It is a long established fact that a
+                                                reader.</small>
+                                        </div>
+                                        <!--end media-body-->
+                                    </div>
+                                    <!--end media-->
+                                </a>
+                                <!--end-item-->
+                                <!-- item-->
+                                <a href="#" class="dropdown-item py-3">
+                                    <small class="float-end text-muted ps-2">2 hrs ago</small>
+                                    <div class="media d-flex">
+                                        <div class="avatar-md bg-soft-primary">
+                                            <i class="ti ti-users"></i>
+                                        </div>
+                                        <div class="media-body align-self-center ms-2 text-truncate">
+                                            <h6 class="my-0 fw-normal text-dark">Payment Successfull</h6>
+                                            <small class="text-muted mb-0">Dummy text of the printing.</small>
+                                        </div>
+                                        <!--end media-body-->
+                                    </div>
+                                    <!--end media-->
+                                </a>
+                                <!--end-item-->
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a href="#" class="nav-link d-flex align-items-center" role="button" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                           <div class="me-4 d-none d-lg-block">
+                            <h5 class="sub-heading text-black mb-1 fw-bolder">Hi, Jerome Bell</h5>
+                            <span>Hello</span>
+                           </div> <img src="./assets/images/17.jpg.png" class="img-fluid" alt="" srcset="">
+                        </a>
+
+                        <ul class="dropdown-menu position-absolute dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <li class=""><a href="./login.html" class="dropdown-item d-flex  align-items-center">
+                                <?xml version="1.0" ?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                                   <svg width="28px" height="28px" viewBox="0 0 1000 1000" data-name="Layer 2" id="Layer_2" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:none;stroke:#020202;stroke-linecap:round;stroke-miterlimit:10;stroke-width:22px;}.cls-2{fill:#020202;}</style></defs><path class="cls-1" d="M591.61,280.48C693.9,317.86,766.91,416,766.91,531.26c0,147.41-119.5,266.91-266.91,266.91S233.09,678.67,233.09,531.26c0-115.22,73-213.4,175.3-250.78"/><rect class="cls-2" height="160.61" rx="35.92" width="71.84" x="464.08" y="201.83"/></svg>
+                                <span class=" d-inline-block">Logout</span>
+                            </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- navbar end -->
+
+            <!-- content -->
+        <div class="page-content-wrapper">
+            <div class="page-content-tab">
+                <div class="container-fluid px-4 pb-4">
+                    <!-- body start -->
+                    <div class="messages-wraper">
+                        <div class="row gap-4 gap-lg-0">
+                            <div class="col-lg-3">
+                                <div class="card border-0 rounded-4 overflow-hidden">
+                                    <div class="card-body p-0"> 
+                                        <form action="">
+                                            <div class="form-group position-relative p-3 bg-white">
+                                                <span class="input-icon">
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.0625 2.125C4.78331 2.125 2.125 4.78331 2.125 8.0625C2.125 11.3417 4.78331 14 8.0625 14C11.3417 14 14 11.3417 14 8.0625C14 4.78331 11.3417 2.125 8.0625 2.125ZM0.875 8.0625C0.875 4.09295 4.09295 0.875 8.0625 0.875C12.032 0.875 15.25 4.09295 15.25 8.0625C15.25 12.032 12.032 15.25 8.0625 15.25C4.09295 15.25 0.875 12.032 0.875 8.0625Z" fill="#969D9F"/>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.2611 12.2612C12.5051 12.0171 12.9009 12.0171 13.1449 12.2612L16.9418 16.0581C17.1859 16.3022 17.1859 16.6979 16.9418 16.942C16.6977 17.1861 16.302 17.1861 16.0579 16.942L12.2611 13.1451C12.017 12.901 12.017 12.5053 12.2611 12.2612Z" fill="#969D9F"/>
+                                                    </svg>
+                                                </span>
+                                                <input type="text" class="form-control search" placeholder="Search" name="" id="">
+                                            </div>
+                                        </form> 
+                                        <ul class="list-unstyled msg-tabs">
+                                                <li class="p-3 d-flex gap-0 msg-tab">
+                                                    <div class="me-2 d-flex align-items-center flex-grow-1">
+                                                        <div class="position-relative me-2">
+                                                            <img src="./assets/images/Photo.png" class="img-fluid" alt="image">
+                                                            <span class="bg-primary online"></span>
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            <p class="mb-0 text-black">Zack Fox</p>
+                                                            <small class="text-black">Thank you...</small>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text-end msg-show "> 
+                                                        <p class="mb-1">10:49 AM</p>
+                                                        <!-- <p class="rounded-pill bg-secondary d-flex align-items-center w-fit-content px-2 py-1 h-20 mb-0 text-white ms-auto">3 </p> -->
+                                                </li>
+                                                <li class="p-3 d-flex gap-0 msg-tab">
+                                                    <div class="me-2 d-flex align-items-center flex-grow-1">
+                                                        <div class="position-relative me-2">
+                                                            <img src="./assets/images/Photo-1.png" class="img-fluid" alt="image">
+                                                            <span class="bg-primary online"></span>
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            <p class="mb-0 text-black">Zack Fox</p>
+                                                            <small class="text-black">Thank you...</small>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text-end msg-show "> 
+                                                        <p class="mb-1">10:49 AM</p>
+                                                        <p class="rounded-pill bg-primary d-flex align-items-center w-fit-content px-2 py-1 h-20 mb-0 text-white ms-auto">3</p>
+                                                </li>
+                                                <li class="p-3 d-flex gap-0 msg-tab">
+                                                    <div class="me-2 d-flex align-items-center flex-grow-1">
+                                                        <div class="position-relative me-2">
+                                                            <img src="./assets/images/Photo-2.png" class="img-fluid" alt="image">
+                                                            <!-- <span class="bg-primary online"></span> -->
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            <p class="mb-0 text-black">Zack Fox</p>
+                                                            <small class="text-black">Thank you...</small>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text-end msg-show "> 
+                                                        <p class="mb-1">10:49 AM</p>
+                                                        <p class="rounded-pill bg-secondary d-flex align-items-center w-fit-content px-2 py-1 h-20 mb-0 text-white ms-auto">100</p>
+                                                </li>
+                                                <li class="p-3 d-flex gap-0 msg-tab">
+                                                    <div class="me-2 d-flex align-items-center flex-grow-1">
+                                                        <div class="position-relative me-2">
+                                                            <img src="./assets/images/Photo-3.png" class="img-fluid" alt="image">
+                                                            <!-- <span class="bg-primary online"></span> -->
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            <p class="mb-0 text-black">Zack Fox</p>
+                                                            <small class="text-black">Thank you...</small>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text-end msg-show "> 
+                                                        <p class="mb-1">10:49 AM</p>
+                                                        <p class="rounded-full bg-primary d-inline-block p-1 mb-0"></p>
+                                                </li>
+                                        </ul>                                          
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="card border-0 rounded-4">
+                                    <div class="card-body p-4 position-relative">
+                                        <ul class="list-unstyled chat px-2">
+                                            <!-- other msg -->
+                                            <li class="chat-list other-msg">
+                                                <div class="position-relative me-4">
+                                                    <img src="./assets/images/Photo-4.png" class="img-fluid" alt="image">
+                                                    <span class="bg-primary online"></span>
+                                                </div>
+                                               <div class="flex-grow-1">
+                                                    <div >
+                                                        <p class="msg">Come on, what’s her name?</p>
+                                                    </div>
+                                                    <small> 4:38 AM</small>
+                                               </div>
+                                            </li>
+                                            <!-- my msg -->
+                                            <li class="chat-list my-msg text-end">
+                                                    <p class="msg  ms-auto text-start">Well, there is this one girl. I’ve had a crush on her ever since I can remember. But I’m pretty sure she didn’t know I was alive until the reaping</p>
+                                                    <small class="sm-auto"> 4:38 AM</small>
+                                            </li>
+                                            <!-- msg day -->
+                                            <li class="chat-list msg-day text-center">
+                                                <span class="bg-secondary rounded-pill text-white px-2 py-1">4 March</span>
+                                            </li>
+                                            <!-- with text -->
+                                            <li class="chat-list other-msg">
+                                                <div class="position-relative me-4">
+                                                    <img src="./assets/images/Photo-4.png" class="img-fluid" alt="image">
+                                                    <span class="bg-primary online"></span>
+                                                </div>
+                                               <div class="flex-grow-1">
+                                                    <div >
+                                                        <span class="text-success fw-normal">Caesar</span>
+                                                        <p class="msg">She has another fellow?</p>
+                                                    </div>
+                                                    <small> 4:38 AM</small>
+                                               </div>
+                                            </li>
+                                            <!-- online -->
+                                            <li class="chat-list my-msg text-end">
+                                                <p class="msg  ms-auto text-start">I don’t know, but a lot of boys like her<span class="bg-primary online"></span></p>
+                                                <small class="sm-auto"> 4:38 AM</small>
+                                            </li>
+                                        </ul>
+                                        <form action="">
+                                            <div class="form-group position-relative">
+                                                <input type="text" class="form-control msg-write" placeholder="Enter hessage here">
+                                                <span class="input-icon right">
+                                                    <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0.14158 16.0631L0.0991079 10.0632L8.08475 8.00665L0.0707928 6.06333L0.0283203 0.0634766L19.0845 7.92878L0.14158 16.0631Z" fill="#4BD16F"/>
+                                                    </svg>                                                            
+                                                </span>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 d-none d-lg-block">
+                                <div class="card border-0 rounded-4">
+                                    <div class="card-body">
+                                        <!-- setting -->
+                                        <div class="setting">
+                                            <div class="d-flex justify-content-between align-items-center border-bottom pb-3 mb-3">
+                                                <div class="d-flex align-items-center">
+                                                    <img src="./assets/images/Photo-4.png" class="img-fluid me-2" alt="">
+                                                    <p class="mb-0 text-black">Caesar</p>
+                                                </div>
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0669 0.933058C13.311 1.17714 13.311 1.57286 13.0669 1.81694L1.81694 13.0669C1.57286 13.311 1.17714 13.311 0.933058 13.0669C0.688981 12.8229 0.688981 12.4271 0.933058 12.1831L12.1831 0.933058C12.4271 0.688981 12.8229 0.688981 13.0669 0.933058Z" fill="#969D9F"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.933058 0.933058C1.17714 0.688981 1.57286 0.688981 1.81694 0.933058L13.0669 12.1831C13.311 12.4271 13.311 12.8229 13.0669 13.0669C12.8229 13.311 12.4271 13.311 12.1831 13.0669L0.933058 1.81694C0.688981 1.57286 0.688981 1.17714 0.933058 0.933058Z" fill="#969D9F"/>
+                                                </svg>
+                                            </div>
+                                            <div class="border-bottom pb-3 mb-3">
+                                                <label for="user-name" class="mb-2 text-primary">User Name</label>
+                                                <p class="mb-0 text-black">@Caesar</p>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center border-bottom pb-3 mb-3">
+                                                <p class="mb-0 text-black">Notifications</p>
+                                                <label class="switch">
+                                                    <input type="checkbox" checked>
+                                                    <span class="slider round"></span>
+                                                </label>
+                                            </div>
+                                            <div class=" pb-3 mb-3">
+                                                <a href="#" class="text-black d-block mb-3">Block user</a>
+                                                <a href="#" class="text-black d-block mb-3">Clear history</a>
+                                                <a href="#" class="text-black d-block mb-3">Delete conversation</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- body end -->
+                </div>
+            </div> 
+
+        </div>
+    </div>
+
+          <!-- Script -->
+    <script src="./assets/js/bootstrap.bundle.js"></script>
+
+    <script>
+        var el = document.getElementById("dashboard-wrapper")
+        var toggleButton = document.getElementById("menu-toggle")
+
+        toggleButton.onclick = function(){
+            el.classList.toggle("toggled")
+        }
+    </script>
+</body>
+</html>
